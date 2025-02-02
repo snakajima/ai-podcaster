@@ -4,7 +4,12 @@
 name: Node.js CI
 
 on:
-  pull_request
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
 
 jobs:
   web_build:
