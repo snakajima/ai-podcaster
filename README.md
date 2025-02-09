@@ -18,6 +18,16 @@ OPENAI_API_KEY={your OpenAI key}
 4. Run ```yarn run gen {path to the script file}```.
 5. The output will be generated in the ./output folder.
 
+## Create a video
+
+1. Claudeを使って台本（PodcastScript）を作成
+2. セリフの分割（src/split.ts）
+3. Claudeを使って、セリフごとに text2image 向けのプロンプトを作成
+4. Youtubeライブ向けの縦動画であれば、その指示を追加（手作業）
+5. 音声ファイルの作成（src/main.tsを使って自動作成）
+6. 画像ファイルの作成（src/images.tsを使って自動生成）
+7. 映像ファイルの作成（src/movie.tsを使って自動生成）
+
 # Script format
 
 ```Javascript

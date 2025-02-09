@@ -4,7 +4,7 @@
   "tts": "nijivoice",
   "voices": [
     "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
-    "a7619e48-bf6a-4f9f-843f-67f919bd5dae",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
     "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
   ],
   "charactors": ["春玲", "太郎", "山田先生"],
@@ -12,79 +12,163 @@
   "script": [
     {
       "speaker": "Announcer",
-      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、米国のAI企業Anthropicのダリオ・アモダイCEOが発表した、中国のAI開発と米国の半導体輸出規制に関する分析について解説します。"
-    },
-    {
-      "speaker": "Student",
-      "text": "先生、ニュースで中国のDeepSeekというAI企業が、すごく安いコストで優れたAIを作ったって聞いたんですが、本当なんですか？"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "ああ、その件ね。実はAnthropicというアメリカの大手AI企業のCEOが、この件について詳しい分析を発表したんだ。彼の分析によると、実際はそこまでドラマチックな話ではないみたいだよ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "えっ、そうなんですか？でも新聞では、すごく安いコストで優れたAIを作ったって書いてありましたよ？"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "確かにDeepSeekは優れたAIを作ったんだけど、実はそれは予想通りの進歩だったんだ。AIの開発コストは毎年4倍くらいのペースで下がっていくんだよ。DeepSeekの成果は、その自然な流れの中での出来事だったんだ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "へぇ、そうだったんですか。でも、それならアメリカは心配しなくていいんじゃないですか？"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "実はね、むしろ逆なんだ。このことで、アメリカの半導体輸出規制がより重要になったと言えるんだよ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "どうしてですか？"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "いい質問だね。まず、AIの開発には「半導体チップ」というものが大量に必要なんだ。DeepSeekは約5万個のチップを使ったと言われているけど、2026年から2027年には、人間より賢いAIを作るために何百万個ものチップが必要になると予想されているんだ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "それって、すごい数ですね！"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "そう。そして重要なのは、少量のチップなら隠して輸入することもできるけど、何百万個もとなると、それは物理的にも難しいし、その取引を隠すのも難しくなるんだ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "なるほど。だから輸出規制が重要なんですね。"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "その通り。アメリカは、中国がそんなに大量のチップを手に入れられないようにしたいんだ。なぜなら、もし両国が同時に強力なAIを持つことになると、軍事利用などで世界の力関係が大きく変わる可能性があるからなんだ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "でも、それって中国の企業にとって不公平じゃないですか？"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "いい視点だね。実際、DeepSeekの開発者たちは、純粋に良い技術を作りたいと考えている優秀な研究者たちなんだ。でも問題は、中国では企業が政府の強い影響下にあって、開発された技術が軍事目的などに使われる可能性が高いということなんだ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "なるほど、技術自体の問題じゃなくて、その使われ方が心配なんですね。"
-    },
-    {
-      "speaker": "Teacher",
-      "text": "その通り。技術の発展自体は素晴らしいことだけど、それが世界の平和と安定を脅かす可能性があるときは、慎重に考える必要があるんだ。これは単純に善悪の問題ではなく、とても複雑な課題なんだよ。"
-    },
-    {
-      "speaker": "Student",
-      "text": "難しい問題ですね。でも、よく分かりました。ありがとうございます。"
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。",
+      "imagePrompt": "A sleek modern podcast studio setup with high-tech equipment, floating holographic tech icons, and a soft blue ambient glow"
     },
     {
       "speaker": "Announcer",
-      "text": "ご視聴ありがとうございました。最先端の技術開発の裏には、このような複雑な国際関係の課題が潜んでいます。次回の放送もお楽しみに。"
+      "text": "今日は、米国のAI企業Anthropicのダリオ・アモダイCEOが発表した、中国のAI開発と米国の半導体輸出規制に関する分析について解説します。",
+      "imagePrompt": "A sophisticated digital map showing connections between USA and China with AI symbols and semiconductor chips floating between them, professional corporate setting"
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースで中国のDeepSeekというAI企業が、すごく安いコストで優れたAIを作ったって聞いたんですが、本当なんですか？",
+      "imagePrompt": "Digital news headlines about DeepSeek's AI breakthrough floating over a backdrop of binary code and neural network visualizations"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ああ、その件ね、実はAnthropicというアメリカの大手AI企業のCEOが、この件について詳しい分析を発表したんだ。",
+      "imagePrompt": "Corporate presentation screen showing Anthropic's logo and analysis charts with AI performance metrics and cost comparisons"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "彼の分析によると、実際はそこまでドラマチックな話ではないみたいだよ。",
+      "imagePrompt": "A balanced scale with newspaper headlines on one side and actual data charts on the other, surrounded by analytical graphs"
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ、そうなんですか？でも新聞では、すごく安いコストで優れたAIを作ったって書いてありましたよ？",
+      "imagePrompt": "Affordable AI development"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "確かにDeepSeekは優れたAIを作ったんだけど、実はそれは予想通りの進歩だったんだ。",
+      "imagePrompt": "A smooth trend line graph showing AI progress over time, with DeepSeek's achievement marked as a point along the expected curve"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "AIの開発コストは毎年4倍くらいのペースで下がっていくんだよ。",
+      "imagePrompt": "An exponential decay graph showing AI development costs trending downward, with yearly markers and cost indicators"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "DeepSeekの成果は、その自然な流れの中での出来事だったんだ。",
+      "imagePrompt": "A flowing river of digital data with DeepSeek's achievement represented as one wave in the natural progression"
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ、そうだったんですか。",
+      "imagePrompt": "A clean, minimalist infographic showing the natural progression of AI development milestones"
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、それならアメリカは心配しなくていいんじゃないですか？",
+      "imagePrompt": "A world map with USA highlighted, surrounded by question marks and AI development indicators"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実はね、むしろ逆なんだ。",
+      "imagePrompt": "A dramatic reversal arrow diagram showing unexpected strategic implications, with AI symbols"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "このことで、アメリカの半導体輸出規制が、より重要になったと言えるんだよ。",
+      "imagePrompt": "Semiconductor supply chain map with highlighted export control points and security symbols"
+    },
+    {
+      "speaker": "Student",
+      "text": "どうしてですか？",
+      "imagePrompt": "A complex puzzle of interconnected tech elements with a prominent question mark overlay"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "いい質問だね。まず、AIの開発には「半導体チップ」というものが大量に必要なんだ。",
+      "imagePrompt": "Massive array of semiconductor chips arranged in a pattern, with AI processing symbols floating above"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "DeepSeekは約5万個のチップを使ったと言われているけど、2026年から2027年には、人間より賢いAIを作るために何百万個ものチップが必要になると予想されているんだ。",
+      "imagePrompt": "Visual comparison of 50,000 chips versus millions, with a timeline to 2027 and advanced AI representations"
+    },
+    {
+      "speaker": "Student",
+      "text": "それって、すごい数ですね！",
+      "imagePrompt": "Infinite mirror effect of semiconductor chips stretching into the distance with glowing quantum effects"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そう、そして重要なのは、少量のチップなら隠して輸入することもできるけど、何百万個もとなると、それは物理的にも難しいし、その取引を隠すのも難しくなるんだ。",
+      "imagePrompt": "Contrast between a small hidden package and massive visible shipping containers full of semiconductors"
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど、だから輸出規制が重要なんですね。",
+      "imagePrompt": "Global trade routes with checkpoints and regulatory symbols, focusing on semiconductor shipments"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。アメリカは、中国がそんなに大量のチップを手に入れられないようにしたいんだ。",
+      "imagePrompt": "Strategic chess board with semiconductor pieces, showing trade regulation moves between USA and China"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "なぜなら、もし両国が同時に強力なAIを持つことになると、軍事利用などで世界の力関係が大きく変わる可能性があるからなんだ。",
+      "imagePrompt": "Global balance scale with AI symbols on both sides, with military and strategic elements in the background"
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、それって中国の企業にとって不公平じゃないですか？",
+      "imagePrompt": "Uneven playing field visualization with tech development barriers and regulatory hurdles"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "いい視点だね。実際、DeepSeekの開発者たちは、純粋に良い技術を作りたいと考えている優秀な研究者たちなんだ。",
+      "imagePrompt": "Laboratory environment with pure research symbols versus strategic concerns represented as contrasting elements"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも問題は、中国では企業が政府の強い影響かにあって、開発された技術が軍事目的などに使われる可能性が高いということなんだ。",
+      "imagePrompt": "Flow diagram showing technology transfer from commercial to military applications with government influence"
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど、技術自体の問題じゃなくて、その使われ方が心配なんですね。",
+      "imagePrompt": "Split image of peaceful versus concerning applications of AI technology, with ethical consideration symbols"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。技術の発展自体は素晴らしいことだけど、それが世界の平和と安定を脅かす可能性があるときは、慎重に考える必要があるんだ。",
+      "imagePrompt": "Double helix of technology progress intertwined with global stability indicators, showing both potential and risk"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これは単純に善悪の問題ではなく、とても複雑な課題なんだよ。",
+      "imagePrompt": "Complex web of interconnected ethical, technological, and geopolitical factors visualized as a network"
+    },
+    {
+      "speaker": "Student",
+      "text": "難しい問題ですね。でも、よく分かりました。",
+      "imagePrompt": "Abstract representation of complex global tech relations resolving into clearer understanding"
+    },
+    {
+      "speaker": "Student",
+      "text": "ありがとうございます。",
+      "imagePrompt": "Peaceful resolution symbolized by balanced technology and global cooperation imagery"
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。",
+      "imagePrompt": "Elegant closing frame with tech podcast elements and soft lighting"
+    },
+    {
+      "speaker": "Announcer",
+      "text": "最先端の技術開発の裏には、このような複雑な国際関係の課題が潜んでいます。",
+      "imagePrompt": "Layered visualization showing surface technology advancement revealing complex international relations beneath"
+    },
+    {
+      "speaker": "Announcer",
+      "text": "次回の放送もお楽しみに。",
+      "imagePrompt": "Futuristic 'Coming Next' screen with tech elements and anticipatory visual hooks"
     }
   ]
 }

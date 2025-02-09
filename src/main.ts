@@ -54,7 +54,8 @@ const graph_tts: GraphData = {
       params: {
         throwError: true,
         voice: ":voice",
-        speed: ":script.speed",
+        speed: ":row.speed",
+        speed_global: ":script.speed",
       },
     },
   },
@@ -182,11 +183,13 @@ const main = async () => {
     },
     {},
   );
+  /*
   script.imageInfo = script.script.map((_: ScriptData, index: number) => {
     return {
       index: index,
     };
   });
+  */
 
   const graph = new GraphAI(
     graph_data,

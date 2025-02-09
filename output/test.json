@@ -21,7 +21,7 @@
       "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、アメリカで発表された「スターゲート・プロジェクト」に、ついて解説します。",
       "imagePrompt": "Blue sky, a flock of birds",
       "filename": "test0",
-      "duration": 8.998800000000001
+      "duration": 9.103250000000001
     }
   ],
   "filename": "test",
@@ -33,7 +33,8 @@
   },
   "imageInfo": [
     {
-      "index": 0
+      "index": 0,
+      "image": "./images/test/0p.png"
     }
   ]
 }

@@ -1,0 +1,645 @@
+{
+  "title": "自動車業界の未来予測と各社の戦略",
+  "description": "世界の自動車メーカーが直面している課題と、今後の業界の行方について、高校生向けにわかりやすく解説するダイアログ形式の内容。",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "太郎",
+    "山田先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "今日は、100年に一度と言われる自動車業界の大変革期に迫ります。",
+      "caption": "100年に一度と言われる自動車業界の大変革期!",
+      "imagePrompt": "A futuristic automotive industry landscape undergoing transformation, with digital elements symbolizing technological advancement.",
+      "filename": "ev_trend_2025_jan0",
+      "duration": 3.8004
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "なぜテスラやビーワイディが急成長し、日本のメーカーが苦戦しているのか？",
+      "caption": "テスラやBYDの急成長！日本のメーカーの苦戦！",
+      "imagePrompt": "A dynamic comparison between Tesla and BYD's growth with struggling Japanese auto brands, depicted with contrasting imagery.",
+      "filename": "ev_trend_2025_jan1",
+      "duration": 3.8526499999999997
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "半導体不足や原材料高騰は業界をどう変えるのか？",
+      "caption": "半導体不足や原材料高騰！",
+      "imagePrompt": "A depiction of the automotive industry grappling with semiconductor shortages and rising raw material costs, with symbolic visuals of microchips and materials.",
+      "filename": "ev_trend_2025_jan2",
+      "duration": 3.17345
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "そして、ホンダと日産の経営統合話の真相とは？",
+      "caption": "ホンダと日産の経営統合話の真相？",
+      "imagePrompt": "A conceptual image of corporate mergers and strategic alliances in the automotive industry, focusing on Honda and Nissan.",
+      "filename": "ev_trend_2025_jan3",
+      "duration": 3.1995999999999998
+    },
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。",
+      "imagePrompt": "An insightful podcast setting featuring an engineer discussing new technologies and business strategies in the automotive sector.",
+      "filename": "ev_trend_2025_jan4",
+      "duration": 7.79715
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、最近ニュースで電気自動車のことをよく聞くんですけど、ガソリン車はなくなってしまうんですか？",
+      "imagePrompt": "A thought-provoking scene of electric vehicles gradually replacing traditional gasoline cars, represented through evolving car designs.",
+      "filename": "ev_trend_2025_jan5",
+      "duration": 5.8902
+    },
+    {
+      "speaker": "Teacher",
+      "text": "いい質問だね。実は今、自動車業界は大きな転換期を迎えているんだ。",
+      "imagePrompt": "An automotive industry at a crossroads, symbolizing a major transition phase with futuristic and traditional car elements.",
+      "filename": "ev_trend_2025_jan6",
+      "duration": 6.491
+    },
+    {
+      "speaker": "Teacher",
+      "text": "特に今後3年くらいで、業界の勢力図が大きく変わるかもしれないんだよ。",
+      "imagePrompt": "A futuristic timeline showing the projected shift in the automotive industry landscape over the next three years.",
+      "filename": "ev_trend_2025_jan7",
+      "duration": 5.42
+    },
+    {
+      "speaker": "Student",
+      "text": "へえ、なんで3年なんですか？",
+      "imagePrompt": "A curious inquiry into the reasons behind the three-year forecast in the automotive industry, with symbolic imagery of time and change.",
+      "filename": "ev_trend_2025_jan8",
+      "duration": 2.54655
+    },
+    {
+      "speaker": "Teacher",
+      "text": "今、自動車メーカーは二つの大きな問題に直面しているんだ。",
+      "imagePrompt": "A depiction of two major challenges facing automakers, represented by visual metaphors of obstacles and hurdles.",
+      "filename": "ev_trend_2025_jan9",
+      "duration": 4.29675
+    },
+    {
+      "speaker": "Teacher",
+      "text": "一つは部品不足。特に半導体という電子部品が足りなくて、思うように車が作れない状況なんだ。",
+      "imagePrompt": "A critical shortage of automotive parts, especially semiconductors, illustrated with factory and supply chain imagery.",
+      "filename": "ev_trend_2025_jan10",
+      "duration": 7.92775
+    },
+    {
+      "speaker": "Teacher",
+      "text": "もう一つは、電気自動車の電池に使うリチウムという材料の価格が、なんと1年で5倍も上がってしまったんだよ。",
+      "imagePrompt": "A dramatic rise in lithium prices affecting electric vehicle batteries, depicted with visuals of fluctuating market graphs and lithium elements.",
+      "filename": "ev_trend_2025_jan11",
+      "duration": 8.03225
+    },
+    {
+      "speaker": "Student",
+      "text": "5倍って、すごい値上がりですね！",
+      "imagePrompt": "An expression of surprise at the drastic increase in lithium prices, symbolized by ascending price graphs and shocked reactions.",
+      "filename": "ev_trend_2025_jan12",
+      "duration": 2.1547
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。でも、これらの問題は2-3年かけて少しずつ解決していくと考えられているんだ。",
+      "imagePrompt": "A hopeful outlook on overcoming current challenges in the automotive industry within 2-3 years, with imagery of gradual progress.",
+      "filename": "ev_trend_2025_jan13",
+      "duration": 7.24855
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その頃には、電気自動車の価格も下がって、より多くの人が買えるようになるだろうね。",
+      "imagePrompt": "A future where electric vehicle prices become more affordable, represented by accessible and diverse EV designs.",
+      "filename": "ev_trend_2025_jan14",
+      "duration": 5.4460999999999995
+    },
+    {
+      "speaker": "Student",
+      "text": "日本の自動車メーカーはどうなるんですか？",
+      "imagePrompt": "A contemplative view on the future of Japanese automakers amidst industry changes, with imagery of heritage and innovation.",
+      "filename": "ev_trend_2025_jan15",
+      "duration": 2.4681499999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は、日本のメーカーは今、難しい立場にいるんだ。",
+      "imagePrompt": "A challenging phase for Japanese automakers, depicted by a metaphorical tightrope balancing act.",
+      "filename": "ev_trend_2025_jan16",
+      "duration": 3.9049
+    },
+    {
+      "speaker": "Teacher",
+      "text": "トヨタを始めとする日本のメーカーは、ハイブリッド車（HV）は得意だけど、完全な電気自動車（EV）への移行にはやや慎重なんだよ。",
+      "imagePrompt": "The cautious transition of Japanese automakers from hybrid to fully electric vehicles, shown through contrasting vehicle imagery.",
+      "filename": "ev_trend_2025_jan17",
+      "duration": 7.9799999999999995
+    },
+    {
+      "speaker": "Student",
+      "text": "慎重というのは、どういうことですか？",
+      "imagePrompt": "An exploration of the cautious approach in the automotive transition, symbolized by careful steps and strategic planning.",
+      "filename": "ev_trend_2025_jan18",
+      "duration": 2.3636999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、「石炭で作った電気で走る電気自動車は、本当にエコなのか」とか、「今はまだハイブリッド車の方が現実的じゃないか」という考えを持っているんだ。",
+      "imagePrompt": "Debate over the eco-friendliness of coal-generated electricity for EVs versus hybrid cars, depicted with pros and cons imagery.",
+      "filename": "ev_trend_2025_jan19",
+      "duration": 9.573450000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これは間違った考えではないんだけどね。",
+      "imagePrompt": "A balanced view on the current automotive strategies, illustrated with scales weighing pros and cons.",
+      "filename": "ev_trend_2025_jan20",
+      "duration": 3.17345
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、それって良いことじゃないんですか？",
+      "imagePrompt": "A positive perspective on cautious automotive strategies, symbolized by thoughtful planning and future benefits.",
+      "filename": "ev_trend_2025_jan21",
+      "duration": 2.10245
+    },
+    {
+      "speaker": "Teacher",
+      "text": "残念ながら、ビジネスの世界では「正しい」ことが必ずしも勝つとは限らないんだ。",
+      "imagePrompt": "The harsh reality of business where being 'right' doesn't always guarantee success, depicted with a competitive business environment.",
+      "filename": "ev_trend_2025_jan22",
+      "duration": 6.073049999999999
+    },
+    {
+      "speaker": "Teacher",
+      "text": "世界中で電気自動車へのシフトが進んでいる中、日本のメーカーだけが取り残されてしまう危険性があるんだよ。",
+      "imagePrompt": "The risk of Japanese automakers being left behind in the global shift to electric vehicles, illustrated with a global race visual.",
+      "filename": "ev_trend_2025_jan23",
+      "duration": 7.6143
+    },
+    {
+      "speaker": "Student",
+      "text": "じゃあ、誰が勝つんですか？",
+      "imagePrompt": "A question about the winners in the automotive industry's future, represented by podiums and rising brands.",
+      "filename": "ev_trend_2025_jan24",
+      "duration": 1.76285
+    },
+    {
+      "speaker": "Teacher",
+      "text": "今の予測では、テスラ、ビーワイディー、現代自動車グループの3社が大きく成長すると言われているんだ。",
+      "caption": "今の予測では、テスラ、BYD（ビーワイディー）、現代自動車グループの3社が大きく成長すると言われているんだ。",
+      "imagePrompt": "The projected growth of Tesla, BYD, and Hyundai in the automotive market, shown with dynamic growth charts and brand logos.",
+      "filename": "ev_trend_2025_jan25",
+      "duration": 7.01345
+    },
+    {
+      "speaker": "Student",
+      "text": "なんでその3社なんですか？",
+      "imagePrompt": "An inquiry into the reasons behind the success of Tesla, BYD, and Hyundai, illustrated with key strategic advantages.",
+      "filename": "ev_trend_2025_jan26",
+      "duration": 1.7890000000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "テスラとビーワイディーは、電気自動車の心臓部である電池を自社で作れるんだ。",
+      "caption": "テスラとBYDは、電気自動車の心臓部である電池を自社で作れるんだ。",
+      "imagePrompt": "Tesla and BYD's strength in producing their own EV batteries, depicted with a focus on innovative battery technology.",
+      "filename": "ev_trend_2025_jan27",
+      "duration": 5.60285
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これは大きな強みになるんだよ。",
+      "imagePrompt": "The advantage of in-house battery production for electric vehicles, symbolized by a powerful engine metaphor.",
+      "filename": "ev_trend_2025_jan28",
+      "duration": 2.78165
+    },
+    {
+      "speaker": "Teacher",
+      "text": "現代自動車グループは、韓国に電池メーカーや半導体メーカーが多くあって、協力しやすい環境があるんだ。",
+      "imagePrompt": "Hyundai's strategic advantage with a supportive ecosystem of battery and semiconductor manufacturers in Korea.",
+      "filename": "ev_trend_2025_jan29",
+      "duration": 7.8755
+    },
+    {
+      "speaker": "Student",
+      "text": "日本のメーカーは、これからどうすればいいんでしょうか？",
+      "imagePrompt": "A contemplative scene about the future actions of Japanese automakers, shown with strategic planning and innovation.",
+      "filename": "ev_trend_2025_jan30",
+      "duration": 2.8861
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は今、日本のメーカーは皮肉な状況にあるんだ。",
+      "imagePrompt": "A paradoxical situation for Japanese automakers, depicted with conflicting elements of challenge and opportunity.",
+      "filename": "ev_trend_2025_jan31",
+      "duration": 3.98325
+    },
+    {
+      "speaker": "Teacher",
+      "text": "部品不足で生産は減っているのに、値引きが少なくなって利益は出ている。",
+      "imagePrompt": "A complex scenario of production decline yet increased profits due to fewer discounts, illustrated with business graphs.",
+      "filename": "ev_trend_2025_jan32",
+      "duration": 5.36775
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これが危機感を薄めてしまい、変化を遅らせる原因になっているんだよ。",
+      "imagePrompt": "The reduced sense of urgency among Japanese automakers, leading to delayed changes, shown with a slow-moving clock.",
+      "filename": "ev_trend_2025_jan33",
+      "duration": 5.0804
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど。でも、まだ間に合うんですよね？",
+      "imagePrompt": "An optimistic view on the possibility of timely adaptation in the automotive industry, symbolized by a reset button.",
+      "filename": "ev_trend_2025_jan34",
+      "duration": 2.93835
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。日産やホンダは既に積極的に電気自動車の開発を進めているよ。",
+      "imagePrompt": "Nissan and Honda's proactive approach to electric vehicle development, shown with innovative car designs.",
+      "filename": "ev_trend_2025_jan35",
+      "duration": 6.3081499999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "特にホンダは、2040年までに販売する車を全て電気自動車か燃料電池車にすると宣言しているんだ。",
+      "imagePrompt": "Honda's bold 2040 declaration to transition to electric and fuel cell vehicles, depicted with futuristic car concepts.",
+      "filename": "ev_trend_2025_jan36",
+      "duration": 7.7448999999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "こういった明確な目標を持って進むことが大切なんだよ。",
+      "imagePrompt": "The importance of setting clear goals in the automotive transition, symbolized by a roadmap with a clear destination.",
+      "filename": "ev_trend_2025_jan37",
+      "duration": 4.1661
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、最近ニュースで、ホンダと日産が合併しようとしていたけど破談になったって聞いたんですが、これはどういうことなんですか？",
+      "imagePrompt": "News of the halted merger between Honda and Nissan, depicted with imagery of contract negotiations and strategic discussions.",
+      "filename": "ev_trend_2025_jan38",
+      "duration": 7.1179499999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。実は去年の12月に、ホンダと日産が経営統合、つまり会社を一つにすることを検討すると発表したんだ。",
+      "imagePrompt": "The initial announcement of a potential merger between Honda and Nissan, shown with imagery of strategic alliances.",
+      "filename": "ev_trend_2025_jan39",
+      "duration": 9.939200000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも今年の2月になって、突然その話が取りやめになってしまったんだよ。",
+      "imagePrompt": "The sudden cancellation of the Honda-Nissan merger, depicted with a halt sign and business documents.",
+      "filename": "ev_trend_2025_jan40",
+      "duration": 5.3155
+    },
+    {
+      "speaker": "Student",
+      "text": "どうして合併しようとしたんですか？",
+      "imagePrompt": "An inquiry into the motives behind the attempted merger, illustrated with visuals of strategic benefits.",
+      "filename": "ev_trend_2025_jan41",
+      "duration": 2.1285499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "電気自動車への移行には、膨大な開発費用と技術力が必要なんだ。",
+      "imagePrompt": "The significant development costs and expertise required for transitioning to electric vehicles, depicted with financial charts.",
+      "filename": "ev_trend_2025_jan42",
+      "duration": 5.3938999999999995
+    },
+    {
+      "speaker": "Teacher",
+      "text": "特に日産は業績が思わしくない中で、ホンダと力を合わせることで、開発コストを抑えたり、お互いの得意分野を活かしたりできると考えたんだよ。",
+      "imagePrompt": "The strategic benefits of a potential Honda-Nissan merger, shown with collaborative teamwork and shared resources.",
+      "filename": "ev_trend_2025_jan43",
+      "duration": 10.0959
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、なんで急に取りやめになったんですか？",
+      "imagePrompt": "The sudden decision to halt the merger, depicted with uncertainty and business meeting imagery.",
+      "filename": "ev_trend_2025_jan44",
+      "duration": 2.31145
+    },
+    {
+      "speaker": "Teacher",
+      "text": "詳しい理由は明らかにされていないんだけど、日産の経営改善のスピードがホンダの期待するものと違っていたんじゃないかと言われているんだ。",
+      "imagePrompt": "Speculation on the reasons for the halted merger, symbolized by divergent paths and unmet expectations.",
+      "filename": "ev_trend_2025_jan45",
+      "duration": 8.6592
+    },
+    {
+      "speaker": "Teacher",
+      "text": "両社の部品を作っている会社の人は「大企業の経営統合は難しいものだから、そんなに驚きではない」と話していたよ。",
+      "imagePrompt": "The complexities of large corporate mergers, depicted with intricate puzzle pieces and corporate logos.",
+      "filename": "ev_trend_2025_jan46",
+      "duration": 7.8755
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、両社はEV開発では今でも協力を続けているんだ。",
+      "imagePrompt": "Ongoing collaboration between Honda and Nissan in EV development, shown with cooperative teamwork imagery.",
+      "filename": "ev_trend_2025_jan47",
+      "duration": 4.42735
+    },
+    {
+      "speaker": "Student",
+      "text": "今日は自動車業界の未来について、よく分かりました。",
+      "imagePrompt": "A clear understanding of the future of the automotive industry, depicted with clarity and visionary elements.",
+      "filename": "ev_trend_2025_jan48",
+      "duration": 3.2518499999999997
+    },
+    {
+      "speaker": "Student",
+      "text": "ありがとうございます！",
+      "imagePrompt": "A scene of gratitude and appreciation, symbolized by friendly gestures and positive ambiance.",
+      "filename": "ev_trend_2025_jan49",
+      "duration": 1.3971500000000001
+    },
+    {
+      "speaker": "Announcer",
+      "text": "本日は自動車業界の大変革期における重要なポイントをお届けしました。",
+      "imagePrompt": "Key highlights of the automotive industry's transformation period, depicted with key points and industry symbols.",
+      "filename": "ev_trend_2025_jan50",
+      "duration": 5.02815
+    },
+    {
+      "speaker": "Announcer",
+      "text": "半導体不足やリチウム価格高騰という足元の課題、そして電気自動車シフトという長期的な変化。",
+      "imagePrompt": "Short-term challenges like semiconductor shortages and lithium price hikes alongside the long-term EV shift, shown with contrasting timelines.",
+      "filename": "ev_trend_2025_jan51",
+      "duration": 7.0396
+    },
+    {
+      "speaker": "Announcer",
+      "text": "この中で、テスラ、ビーワイディー、現代自動車グループが躍進を遂げる一方、日本のメーカーは岐路に立たされています。",
+      "caption": "この中で、テスラ、BYD、現代自動車グループが躍進を遂げる一方、日本のメーカーは岐路に立たされています。",
+      "imagePrompt": "The rise of Tesla, BYD, and Hyundai contrasted with the crossroads faced by Japanese automakers, depicted with divergent paths.",
+      "filename": "ev_trend_2025_jan52",
+      "duration": 7.82325
+    },
+    {
+      "speaker": "Announcer",
+      "text": "しかし、ホンダの2040年イーブイシフト宣言に見られるように、日本メーカーも着実に変化への対応を進めています。",
+      "caption": "しかし、ホンダの2040年EVシフト宣言に見られるように、日本メーカーも着実に変化への対応を進めています。",
+      "imagePrompt": "Honda's 2040 EV shift declaration symbolizing Japanese automakers' adaptation to change, depicted with a forward-looking vision.",
+      "filename": "ev_trend_2025_jan53",
+      "duration": 8.5845
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。次回の放送もお楽しみに。",
+      "imagePrompt": "A closing scene of a podcast episode, with a thank you message and anticipation for future broadcasts.",
+      "filename": "ev_trend_2025_jan54",
+      "duration": 5.02815
+    }
+  ],
+  "filename": "ev_trend_2025_jan",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  },
+  "imageInfo": [
+    {
+      "index": 0,
+      "image": "./images/ev_trend_2025_jan/0p.png"
+    },
+    {
+      "index": 1,
+      "image": "./images/ev_trend_2025_jan/1p.png"
+    },
+    {
+      "index": 2,
+      "image": "./images/ev_trend_2025_jan/2p.png"
+    },
+    {
+      "index": 3,
+      "image": "./images/ev_trend_2025_jan/3p.png"
+    },
+    {
+      "index": 4
+    },
+    {
+      "index": 5,
+      "image": "./images/ev_trend_2025_jan/5p.png"
+    },
+    {
+      "index": 6,
+      "image": "./images/ev_trend_2025_jan/6p.png"
+    },
+    {
+      "index": 7,
+      "image": "./images/ev_trend_2025_jan/7p.png"
+    },
+    {
+      "index": 8,
+      "image": "./images/ev_trend_2025_jan/8p.png"
+    },
+    {
+      "index": 9,
+      "image": "./images/ev_trend_2025_jan/9p.png"
+    },
+    {
+      "index": 10,
+      "image": "./images/ev_trend_2025_jan/10p.png"
+    },
+    {
+      "index": 11,
+      "image": "./images/ev_trend_2025_jan/11p.png"
+    },
+    {
+      "index": 12,
+      "image": "./images/ev_trend_2025_jan/12p.png"
+    },
+    {
+      "index": 13,
+      "image": "./images/ev_trend_2025_jan/13p.png"
+    },
+    {
+      "index": 14,
+      "image": "./images/ev_trend_2025_jan/14p.png"
+    },
+    {
+      "index": 15,
+      "image": "./images/ev_trend_2025_jan/15p.png"
+    },
+    {
+      "index": 16,
+      "image": "./images/ev_trend_2025_jan/16p.png"
+    },
+    {
+      "index": 17,
+      "image": "./images/ev_trend_2025_jan/17p.png"
+    },
+    {
+      "index": 18,
+      "image": "./images/ev_trend_2025_jan/18p.png"
+    },
+    {
+      "index": 19,
+      "image": "./images/ev_trend_2025_jan/19p.png"
+    },
+    {
+      "index": 20,
+      "image": "./images/ev_trend_2025_jan/20p.png"
+    },
+    {
+      "index": 21,
+      "image": "./images/ev_trend_2025_jan/21p.png"
+    },
+    {
+      "index": 22,
+      "image": "./images/ev_trend_2025_jan/22p.png"
+    },
+    {
+      "index": 23,
+      "image": "./images/ev_trend_2025_jan/23p.png"
+    },
+    {
+      "index": 24,
+      "image": "./images/ev_trend_2025_jan/24p.png"
+    },
+    {
+      "index": 25,
+      "image": "./images/ev_trend_2025_jan/25p.png"
+    },
+    {
+      "index": 26,
+      "image": "./images/ev_trend_2025_jan/26p.png"
+    },
+    {
+      "index": 27,
+      "image": "./images/ev_trend_2025_jan/27p.png"
+    },
+    {
+      "index": 28,
+      "image": "./images/ev_trend_2025_jan/28p.png"
+    },
+    {
+      "index": 29,
+      "image": "./images/ev_trend_2025_jan/29p.png"
+    },
+    {
+      "index": 30,
+      "image": "./images/ev_trend_2025_jan/30p.png"
+    },
+    {
+      "index": 31,
+      "image": "./images/ev_trend_2025_jan/31p.png"
+    },
+    {
+      "index": 32,
+      "image": "./images/ev_trend_2025_jan/32p.png"
+    },
+    {
+      "index": 33,
+      "image": "./images/ev_trend_2025_jan/33p.png"
+    },
+    {
+      "index": 34,
+      "image": "./images/ev_trend_2025_jan/34p.png"
+    },
+    {
+      "index": 35,
+      "image": "./images/ev_trend_2025_jan/35p.png"
+    },
+    {
+      "index": 36,
+      "image": "./images/ev_trend_2025_jan/36p.png"
+    },
+    {
+      "index": 37,
+      "image": "./images/ev_trend_2025_jan/37p.png"
+    },
+    {
+      "index": 38,
+      "image": "./images/ev_trend_2025_jan/38p.png"
+    },
+    {
+      "index": 39,
+      "image": "./images/ev_trend_2025_jan/39p.png"
+    },
+    {
+      "index": 40,
+      "image": "./images/ev_trend_2025_jan/40p.png"
+    },
+    {
+      "index": 41,
+      "image": "./images/ev_trend_2025_jan/41p.png"
+    },
+    {
+      "index": 42,
+      "image": "./images/ev_trend_2025_jan/42p.png"
+    },
+    {
+      "index": 43,
+      "image": "./images/ev_trend_2025_jan/43p.png"
+    },
+    {
+      "index": 44
+    },
+    {
+      "index": 45,
+      "image": "./images/ev_trend_2025_jan/45p.png"
+    },
+    {
+      "index": 46,
+      "image": "./images/ev_trend_2025_jan/46p.png"
+    },
+    {
+      "index": 47,
+      "image": "./images/ev_trend_2025_jan/47p.png"
+    },
+    {
+      "index": 48,
+      "image": "./images/ev_trend_2025_jan/48p.png"
+    },
+    {
+      "index": 49
+    },
+    {
+      "index": 50,
+      "image": "./images/ev_trend_2025_jan/50p.png"
+    },
+    {
+      "index": 51,
+      "image": "./images/ev_trend_2025_jan/51p.png"
+    },
+    {
+      "index": 52,
+      "image": "./images/ev_trend_2025_jan/52p.png"
+    },
+    {
+      "index": 53,
+      "image": "./images/ev_trend_2025_jan/53p.png"
+    },
+    {
+      "index": 54,
+      "image": "./images/ev_trend_2025_jan/54p.png"
+    }
+  ]
+}

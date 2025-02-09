@@ -6,7 +6,7 @@ export const ttsNijivoiceAgent: AgentFunction = async ({
   params,
   namedInputs,
 }) => {
-  const { apiKey, throwError, voice, speed } = params;
+  const { apiKey, throwError, voice, speed, speed_global } = params;
   const { text } = namedInputs;
   const url = `https://api.nijivoice.com/api/platform/v1/voice-actors/${voice}/generate-voice`;
   const options = {
@@ -18,7 +18,7 @@ export const ttsNijivoiceAgent: AgentFunction = async ({
     },
     body: JSON.stringify({
       format: "mp3",
-      speed: speed ? "" + speed : "1.0",
+      speed: speed ? "" + speed : speed_global ? "" + speed_global : "1.0",
       script: text,
     }),
   };

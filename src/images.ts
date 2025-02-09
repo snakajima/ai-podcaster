@@ -63,7 +63,11 @@ async function generateImage(
       }
     } else {
       // console.log(response);
-      console.log("No predictions returned from the API.", responseData);
+      console.log(
+        "No predictions returned from the API.",
+        responseData,
+        prompt,
+      );
       return undefined;
     }
   } catch (error) {
@@ -73,7 +77,7 @@ async function generateImage(
 }
 
 const image_agent = async (namedInputs: {
-  row: { index: number };
+  row: { index: number, imagePrompt: string };
   suffix: string;
   script: PodcastScript;
 }) => {
@@ -86,9 +90,8 @@ const image_agent = async (namedInputs: {
   }
 
   try {
-    const imagePrompt = script.script[row.index].imagePrompt;
-    console.log("generating", row.index, imagePrompt);
-    const imageBuffer = await generateImage(imagePrompt, script);
+    console.log("generating", row.index, row.imagePrompt);
+    const imageBuffer = await generateImage(row.imagePrompt, script);
     if (imageBuffer) {
       fs.writeFileSync(imagePath, imageBuffer);
       console.log("generated:", imagePath);
@@ -140,14 +143,14 @@ const image_agent = async (namedInputs: {
 
 const graph_data: GraphData = {
   version: 0.5,
-  concurrency: 4,
+  concurrency: 2,
   nodes: {
     script: {
       value: {},
     },
     map: {
       agent: "mapAgent",
-      inputs: { rows: ":script.imageInfo", script: ":script" },
+      inputs: { rows: ":script.images", script: ":script" },
       isResult: true,
       graph: {
         nodes: {
@@ -163,6 +166,7 @@ const graph_data: GraphData = {
             agent: "copyAgent",
             inputs: {
               index: ":row.index",
+              imagePrompt: ":row.imagePrompt",
               image: ":plain",
             },
             isResult: true,
@@ -184,6 +188,8 @@ const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const parsedPath = path.parse(scriptPath);
+  const scriptData = fs.readFileSync(scriptPath, "utf-8");
+  const script = JSON.parse(scriptData) as PodcastScript;
 
   const tmScriptPath = path.resolve("./output/" + parsedPath.name + ".json");
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
@@ -202,17 +208,19 @@ const main = async () => {
     ...agents,
   });
 
+  script.filename = jsonDataTm.filename; // Hack: It allows us to use the source script
+
   // DEBUG
   // jsonDataTm.imageInfo = [jsonDataTm.imageInfo[0]];
 
-  graph.injectValue("script", jsonDataTm);
+  graph.injectValue("script", script);
   const results = await graph.run();
   if (results.map) {
     const data = results.map as DefaultResultData[];
     const info = data.map((element: any) => {
       return element.output;
     });
-    jsonDataTm.imageInfo = info;
+    jsonDataTm.images = info;
     fs.writeFileSync(tmScriptPath, JSON.stringify(jsonDataTm, null, 2));
   }
 };

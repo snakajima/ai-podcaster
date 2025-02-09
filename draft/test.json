@@ -1,0 +1,26 @@
+{
+  "title": "自動車業界の未来予測と各社の戦略",
+  "description": "世界の自動車メーカーが直面している課題と、今後の業界の行方について、高校生向けにわかりやすく解説するダイアログ形式の内容。",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": ["春玲", "太郎", "山田先生"],
+  "speakers": ["Announcer", "Student", "Teacher"],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "今日は、100年に一度と言われる自動車業界の大変革期に迫ります。",
+      "caption": "100年に一度と言われる自動車業界の大変革期!"
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "なぜテスラやBYDが急成長し、日本のメーカーが苦戦しているのか？",
+      "caption": "テスラやBYDの急成長！日本のメーカーの苦戦！"
+    }
+  ]
+}

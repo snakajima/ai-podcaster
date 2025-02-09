@@ -8,7 +8,7 @@
   "tts": "nijivoice",
   "voices": [
     "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
-    "a7619e48-bf6a-4f9f-843f-40485651257f", 
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
     "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
   ],
   "charactors": ["春玲", "森野颯太", "ベン・カーター"],

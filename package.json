@@ -7,6 +7,10 @@
     "gen": "npx tsx ./src/main.ts",
     "ja": "npx tsx ./src/translate.ts",
     "mov": "npx tsx ./src/movie.ts",
+    "images": "npx tsx ./src/images.ts",
+    "imagep": "npx tsx ./src/imagep.ts",
+    "split": "npx tsx ./src/split.ts",
+    "movie": "npx tsx ./src/movie.ts",
     "test": "rm -f scratchpad/test*.* && npx tsx ./src/main.ts scripts/test.json && npx tsx ./src/images.ts scripts/test.json && npx tsx ./src/movie.ts scripts/test.json",
     "lint": "eslint src",
     "format": "prettier --write '{src,scripts,draft,ideason,scripts_mag2}/**/*.{ts,json}'"
@@ -31,6 +35,7 @@
     "fluent-ffmpeg": "^2.1.3",
     "google-auth-library": "^9.15.1",
     "graphai": "^0.6.9",
+    "kokoro-js": "^1.1.1",
     "openai": "^4.67.3",
     "puppeteer": "^24.1.1",
     "sharp": "^0.33.5"

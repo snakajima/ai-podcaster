@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
-import { PodcastScript } from "./type";
+import { ScriptData, PodcastScript, ImageInfo } from "./type";
 
 async function renderJapaneseTextToPNG(
   text: string,
@@ -92,47 +92,65 @@ async function renderJapaneseTextToPNG(
   console.log(`Image saved to ${outputFilePath}`);
 }
 
-interface ImageDetails {
-  path: string;
+interface CaptionInfo {
+  pathCaption: string;
+  imageIndex: number;
   duration: number; // Duration in seconds for each image
 }
 
 const createVideo = (
   audioPath: string,
-  images: ImageDetails[],
+  captions: CaptionInfo[],
+  images: ImageInfo[],
   outputVideoPath: string,
   canvasInfo: any,
 ) => {
+  const start = performance.now();
   let command = ffmpeg();
 
   // Add each image input
-  images.forEach((image) => {
-    command = command.input(image.path);
+  images.forEach((element) => {
+    command = command.input(element.image!); // HACK
   });
+  captions.forEach((element) => {
+    command = command.input(element.pathCaption);
+  });
+  const imageCount = images.length;
+  const captionCount = captions.length;
 
   // Build filter_complex string to manage start times
   const filterComplexParts: string[] = [];
 
-  images.forEach((image, index) => {
+  captions.forEach((element, index) => {
     // Add filter for each image
     filterComplexParts.push(
-      // `[${index}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,format=yuv420p,trim=duration=${image.duration},setpts=${startTime}/TB[v${index}]`,
-      `[${index}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${image.duration * 30},trim=duration=${image.duration}[v${index}]`,
+      // Resize background image to match canvas dimensions
+      `[${element.imageIndex}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${element.duration}[bg${index}];` +
+      `[${imageCount + index}:v]scale=${canvasInfo.width * 2}:${canvasInfo.height * 2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[cap${index}];` +
+      `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`,
     );
   });
 
   // Concatenate the trimmed images
-  const concatInput = images.map((_, index) => `[v${index}]`).join("");
-  filterComplexParts.push(`${concatInput}concat=n=${images.length}:v=1:a=0[v]`);
+  const concatInput = captions.map((_, index) => `[v${index}]`).join("");
+  filterComplexParts.push(`${concatInput}concat=n=${captions.length}:v=1:a=0[v]`);
 
   // Apply the filter complex for concatenation and map audio input
   command
     .complexFilter(filterComplexParts)
     .input(audioPath) // Add audio input
     .outputOptions([
+      "-preset veryfast", // Faster encoding
       "-map [v]", // Map the video stream
-      "-map " + images.length + ":a", // Map the audio stream (audio is the next input after all images)
-      "-c:v libx264", // Set video codec
+      `-map ${imageCount + captionCount}:a`, // Map the audio stream (audio is the next input after all images)
+      "-c:v h264_videotoolbox", // Set video codec
+      "-threads 8",
+      "-filter_threads 8",
+      "-b:v 5M", // bitrate (only for videotoolbox)
+      "-bufsize",
+      "10M", // Add buffer size for better quality
+      "-maxrate",
+      "7M", // Maximum bitrate
       "-r 30", // Set frame rate
       "-pix_fmt yuv420p", // Set pixel format for better compatibility
     ])
@@ -145,7 +163,8 @@ const createVideo = (
       console.error("FFmpeg stderr:", stderr);
     })
     .on("end", () => {
-      console.log("Video created successfully!");
+      const end = performance.now();
+      console.log(`Video created successfully! ${end - start}ms`);
     })
     .output(outputVideoPath)
     .run();
@@ -177,9 +196,9 @@ const main = async () => {
     console.error("Error generating PNG:", err);
   });
 
-  const promises = jsonData.script.map((element: any, index: number) => {
+  const promises = jsonData.script.map((element: ScriptData, index: number) => {
     return renderJapaneseTextToPNG(
-      element["text"],
+      element.caption ?? element.text,
       `./scratchpad/${name}_${index}.png`, // Output file path
       canvasInfo,
     ).catch((err) => {
@@ -193,6 +212,7 @@ const main = async () => {
   const jsonDataTm: PodcastScript = JSON.parse(dataTm);
 
   // add images
+  /*
   const imageInfo = jsonDataTm.imageInfo;
   await imageInfo.forEach(async (element: { index: number; image: string }) => {
     const { index, image } = element;
@@ -217,25 +237,28 @@ const main = async () => {
       fs.writeFileSync(imagePath, buffer);
     }
   });
+  */
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
-  const images: ImageDetails[] = jsonDataTm.script.map(
+  const captions: CaptionInfo[] = jsonDataTm.script.map(
     (item: any, index: number) => {
-      const duration = item.duration;
       return {
-        path: path.resolve(`./scratchpad/${name}_${index}.png`),
-        duration,
+        pathCaption: path.resolve(`./scratchpad/${name}_${index}.png`),
+        imageIndex: item.imageIndex,
+        duration: item.duration,
       };
     },
   );
   const outputVideoPath = path.resolve("./output/" + name + "_ja.mp4");
-  const titleImage: ImageDetails = {
-    path: path.resolve(`./scratchpad/${name}_00.png`),
+  const titleInfo: CaptionInfo = {
+    pathCaption: path.resolve(`./scratchpad/${name}_00.png`), // HACK
+    imageIndex: 0, // HACK
     duration: (jsonData.padding ?? 4000) / 1000,
   };
-  const imagesWithTitle = [titleImage].concat(images);
+  const captionsWithTitle = [titleInfo].concat(captions);
+  // const captionsWithTitle = [captions[0], captions[1], captions[5], captions[8]];
 
-  createVideo(audioPath, imagesWithTitle, outputVideoPath, canvasInfo);
+  createVideo(audioPath, captionsWithTitle, jsonDataTm.images, outputVideoPath, canvasInfo);
 };
 
 main();

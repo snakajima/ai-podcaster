@@ -1,0 +1,587 @@
+{
+  "title": "カリフォルニア高速鉄道計画の問題点",
+  "description": "アメリカ・カリフォルニア州の高速鉄道計画における予算超過と遅延の問題、およびその調査に関する最新のニュースについての教育的な対話。",
+  "tts": "nijivoice",
+  "reference": "https://californiaglobe.com/fl/pres-trump-to-investigate-californias-high-speed-rail-scheme-worst-managed-project-ive-seen/",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "春玲",
+    "太郎",
+    "山田先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "新幹線は、高い技術力と正確なスケジュール管理で世界中から称賛されている日本の誇りです。",
+      "imageIndex": 0,
+      "filename": "ca_hispeed_rail0",
+      "duration": 5.02815
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "しかし、同じ高速鉄道をアメリカで作ろうとしたら、",
+      "imageIndex": 0,
+      "filename": "ca_hispeed_rail1",
+      "duration": 3.0951
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "どうなるのでしょうか？",
+      "imageIndex": 0,
+      "filename": "ca_hispeed_rail2",
+      "duration": 1.4755
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "予算は4倍に膨れ上がり、完成時期は10年以上遅れ、",
+      "imageIndex": 0,
+      "filename": "ca_hispeed_rail3",
+      "duration": 3.17345
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "いまだに完成の見通しが立っていない…。",
+      "imageIndex": 0,
+      "filename": "ca_hispeed_rail4",
+      "duration": 2.23305
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "今日は、カリフォルニア州の高速鉄道計画が直面している問題から、",
+      "imageIndex": 0,
+      "filename": "ca_hispeed_rail5",
+      "duration": 3.9049
+    },
+    {
+      "speaker": "Announcer",
+      "speed": 1.5,
+      "text": "大規模プロジェクトの難しさと、計画段階での慎重な検討の重要性について考えていきます。",
+      "imageIndex": 0,
+      "filename": "ca_hispeed_rail6",
+      "duration": 5.0804
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースでカリフォルニアの高速鉄道計画について、",
+      "imageIndex": 1,
+      "filename": "ca_hispeed_rail7",
+      "duration": 3.8004
+    },
+    {
+      "speaker": "Student",
+      "text": "トランプ大統領が「調査する」って言ってたんですけど、",
+      "imageIndex": 1,
+      "filename": "ca_hispeed_rail8",
+      "duration": 2.9905999999999997
+    },
+    {
+      "speaker": "Student",
+      "text": "どういうことですか？",
+      "imageIndex": 1,
+      "filename": "ca_hispeed_rail9",
+      "duration": 1.4494
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ああ、これは大きな問題になってるんだよ。",
+      "imageIndex": 2,
+      "filename": "ca_hispeed_rail10",
+      "duration": 3.6959
+    },
+    {
+      "speaker": "Teacher",
+      "text": "カリフォルニア州が計画している高速鉄道プロジェクトが、",
+      "imageIndex": 2,
+      "filename": "ca_hispeed_rail11",
+      "duration": 4.1661
+    },
+    {
+      "speaker": "Teacher",
+      "text": "予算も工期も大幅に超過してしまっているんだ。",
+      "imageIndex": 2,
+      "filename": "ca_hispeed_rail12",
+      "duration": 3.6437
+    },
+    {
+      "speaker": "Student",
+      "text": "どのくらい予算オーバーしているんですか？",
+      "imageIndex": 3,
+      "filename": "ca_hispeed_rail13",
+      "duration": 2.31145
+    },
+    {
+      "speaker": "Teacher",
+      "text": "驚くべき数字なんだ。2008年に計画が始まった時は330億ドルで完成する予定だったんだけど、",
+      "caption": "驚くべき数字なんだ。2008年に計画が始まった時は330億ドル（約5兆円）で完成する予定だったんだけど、",
+      "imageIndex": 4,
+      "filename": "ca_hispeed_rail14",
+      "duration": 8.24125
+    },
+    {
+      "speaker": "Teacher",
+      "text": "今では千にひゃく八十億ドル以上かかると言われているんだよ。",
+      "caption": "今では1,280億ドル（約19兆円）以上かかると言われているんだよ。",
+      "imageIndex": 4,
+      "filename": "ca_hispeed_rail15",
+      "duration": 4.0094
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ！4倍近く？そんなに増えちゃうんですか？",
+      "imageIndex": 5,
+      "filename": "ca_hispeed_rail16",
+      "duration": 3.3041
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。しかも、完成予定も大幅に遅れていて、",
+      "imageIndex": 6,
+      "filename": "ca_hispeed_rail17",
+      "duration": 5.00205
+    },
+    {
+      "speaker": "Teacher",
+      "text": "当初は2028年までにサンフランシスコとロサンゼルスを結ぶ予定だったのが、",
+      "imageIndex": 6,
+      "filename": "ca_hispeed_rail18",
+      "duration": 5.60285
+    },
+    {
+      "speaker": "Teacher",
+      "text": "今では二千三十年代後半になるかもしれないって言われているんだ。",
+      "caption": "今では2030年代後半になるかもしれないって言われているんだ。",
+      "imageIndex": 6,
+      "filename": "ca_hispeed_rail19",
+      "duration": 4.63635
+    },
+    {
+      "speaker": "Student",
+      "text": "なんでそんなことになっちゃったんですか？",
+      "imageIndex": 7,
+      "filename": "ca_hispeed_rail20",
+      "duration": 2.1285499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "いくつか大きな問題があるんだ。",
+      "imageIndex": 8,
+      "filename": "ca_hispeed_rail21",
+      "duration": 2.7032499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "まず、2008年に住民投票で承認された時の約束が守られていないんだよ。",
+      "imageIndex": 8,
+      "filename": "ca_hispeed_rail22",
+      "duration": 5.5506
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、列車は時速320キロ以上で走れることが条件だったんだけど、",
+      "imageIndex": 8,
+      "filename": "ca_hispeed_rail23",
+      "duration": 5.0804
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それが難しい区間があるんだ。",
+      "imageIndex": 8,
+      "filename": "ca_hispeed_rail24",
+      "duration": 2.7554999999999996
+    },
+    {
+      "speaker": "Student",
+      "text": "他にも問題があるんですか？",
+      "imageIndex": 9,
+      "filename": "ca_hispeed_rail25",
+      "duration": 1.86735
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん。もう一つ重要な約束は、運営が黒字になることだったんだ。",
+      "imageIndex": 10,
+      "filename": "ca_hispeed_rail26",
+      "duration": 6.073049999999999
+    },
+    {
+      "speaker": "Teacher",
+      "text": "政府からの補助金なしで運営できることが条件だったんだけど、",
+      "imageIndex": 10,
+      "filename": "ca_hispeed_rail27",
+      "duration": 4.29675
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それも難しそうなんだ。",
+      "imageIndex": 10,
+      "filename": "ca_hispeed_rail28",
+      "duration": 2.4943
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、工事は進んでいるんですよね？",
+      "imageIndex": 11,
+      "filename": "ca_hispeed_rail29",
+      "duration": 2.2853
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ある程度は進んでいるよ。",
+      "imageIndex": 12,
+      "filename": "ca_hispeed_rail30",
+      "duration": 2.2853
+    },
+    {
+      "speaker": "Teacher",
+      "text": "高速鉄道局の発表によると、171マイルが工事中で、",
+      "caption": "高速鉄道局の発表によると、171マイル（約275キロ）が工事中で、",
+      "imageIndex": 12,
+      "filename": "ca_hispeed_rail31",
+      "duration": 5.36775
+    },
+    {
+      "speaker": "Teacher",
+      "text": "60マイルの線路基礎工事が完成しているんだ。",
+      "caption": "60マイル（約97キロ）の線路基礎工事が完成しているんだ。",
+      "imageIndex": 12,
+      "filename": "ca_hispeed_rail32",
+      "duration": 3.74815
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、全線完成にはまだ一千億ドルも必要だって言われているんだよ。",
+      "caption": "でも、全線完成にはまだ1,000億ドル（約15兆円）も必要だって言われているんだよ。",
+      "imageIndex": 12,
+      "filename": "ca_hispeed_rail33",
+      "duration": 4.68855
+    },
+    {
+      "speaker": "Student",
+      "text": "そんなにお金がかかるなら、やめちゃえば良いんじゃないですか？",
+      "imageIndex": 13,
+      "filename": "ca_hispeed_rail34",
+      "duration": 2.8861
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実はそれが難しいんだ。",
+      "imageIndex": 14,
+      "filename": "ca_hispeed_rail35",
+      "duration": 2.54655
+    },
+    {
+      "speaker": "Teacher",
+      "text": "すでに多くのお金を使って工事を始めているし、",
+      "imageIndex": 14,
+      "filename": "ca_hispeed_rail36",
+      "duration": 3.6698
+    },
+    {
+      "speaker": "Teacher",
+      "text": "一万よんせんろっぴゃく人の雇用も生まれている。",
+      "caption": "14,600人の雇用も生まれている。",
+      "imageIndex": 14,
+      "filename": "ca_hispeed_rail37",
+      "duration": 3.2779499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それに、環境に優しい交通手段として期待されているんだよ。",
+      "imageIndex": 14,
+      "filename": "ca_hispeed_rail38",
+      "duration": 4.7408
+    },
+    {
+      "speaker": "Student",
+      "text": "日本の新幹線みたいに、もっとうまくできないんですかね。",
+      "imageIndex": 15,
+      "filename": "ca_hispeed_rail39",
+      "duration": 3.1995999999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。日本の新幹線は世界でも成功例として知られているけど、",
+      "imageIndex": 16,
+      "filename": "ca_hispeed_rail40",
+      "duration": 5.8641
+    },
+    {
+      "speaker": "Teacher",
+      "text": "アメリカは高速鉄道の建設経験が少ないんだ。",
+      "imageIndex": 16,
+      "filename": "ca_hispeed_rail41",
+      "duration": 3.72205
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それに、土地の買収や環境アセスメント、",
+      "imageIndex": 16,
+      "filename": "ca_hispeed_rail42",
+      "duration": 3.95715
+    },
+    {
+      "speaker": "Teacher",
+      "text": "政治的な問題など、様々な課題があるんだよ。",
+      "imageIndex": 16,
+      "filename": "ca_hispeed_rail43",
+      "duration": 4.1661
+    },
+    {
+      "speaker": "Student",
+      "text": "トランプ大統領の調査で何か変わるんでしょうか？",
+      "imageIndex": 17,
+      "filename": "ca_hispeed_rail44",
+      "duration": 3.01675
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それはこれからの展開を見守る必要があるね。",
+      "imageIndex": 18,
+      "filename": "ca_hispeed_rail45",
+      "duration": 3.4347
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、このケースは大規模プロジェクトの難しさと、",
+      "imageIndex": 18,
+      "filename": "ca_hispeed_rail46",
+      "duration": 3.6959
+    },
+    {
+      "speaker": "Teacher",
+      "text": "計画段階での慎重な検討の重要性を教えてくれる良い例になっているよ。",
+      "imageIndex": 18,
+      "filename": "ca_hispeed_rail47",
+      "duration": 4.9759
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど。税金を使う大きなプロジェクトは、",
+      "imageIndex": 19,
+      "filename": "ca_hispeed_rail48",
+      "duration": 3.35635
+    },
+    {
+      "speaker": "Student",
+      "text": "最初の計画がすごく大切なんですね。",
+      "imageIndex": 19,
+      "filename": "ca_hispeed_rail49",
+      "duration": 2.651
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今回は、カリフォルニア高速鉄道計画の問題から、",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail50",
+      "duration": 3.95715
+    },
+    {
+      "speaker": "Announcer",
+      "text": "大規模プロジェクトの難しさについて学びました。",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail51",
+      "duration": 3.4347
+    },
+    {
+      "speaker": "Announcer",
+      "text": "当初の予算330億ドルが1280億ドルに膨れ上がり、",
+      "caption": "当初の予算330億ドルが1,280億ドルに膨れ上がり、",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail52",
+      "duration": 4.76695
+    },
+    {
+      "speaker": "Announcer",
+      "text": "完成予定も2028年から2030年代後半へと大幅に遅れる中、",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail53",
+      "duration": 5.8641
+    },
+    {
+      "speaker": "Announcer",
+      "text": "私たちは重要な教訓を得ることができます。",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail54",
+      "duration": 3.2779499999999997
+    },
+    {
+      "speaker": "Announcer",
+      "text": "それは、プロジェクトの成功には、",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail55",
+      "duration": 2.8339
+    },
+    {
+      "speaker": "Announcer",
+      "text": "綿密な計画立案、透明性の高い運営、",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail56",
+      "duration": 3.98325
+    },
+    {
+      "speaker": "Announcer",
+      "text": "そして約束じこうの確実な実行が不可欠だということ。",
+      "caption": "そして約束事項の確実な実行が不可欠だということ。",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail57",
+      "duration": 4.14
+    },
+    {
+      "speaker": "Announcer",
+      "text": "日本の新幹線が世界に誇る正確性と効率性は、",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail58",
+      "duration": 4.21835
+    },
+    {
+      "speaker": "Announcer",
+      "text": "決して偶然ではないのです。",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail59",
+      "duration": 2.33755
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail60",
+      "duration": 2.9158999999999997
+    },
+    {
+      "speaker": "Announcer",
+      "text": "次回の放送も、お楽しみに。",
+      "imageIndex": 20,
+      "filename": "ca_hispeed_rail61",
+      "duration": 2.93835
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "imagePrompt": "A sprawling construction site showcasing an ambitious but delayed high-speed rail project in California, with cranes and partially built tracks under a setting sun.",
+      "image": "./images/ca_hispeed_rail/0p.png"
+    },
+    {
+      "index": 1,
+      "imagePrompt": "A political cartoon-style image showing a high-speed train labeled 'California Rail' being scrutinized by a magnifying glass labeled 'Investigation'.",
+      "image": "./images/ca_hispeed_rail/1p.png"
+    },
+    {
+      "index": 2,
+      "imagePrompt": "An infographic illustrating the budget and timeline overrun of the California high-speed rail project with arrows pointing upwards.",
+      "image": "./images/ca_hispeed_rail/2p.png"
+    },
+    {
+      "index": 3,
+      "imagePrompt": "A digital billboard displaying a budget graph, with a sharp upward trajectory symbolizing cost overruns.",
+      "image": "./images/ca_hispeed_rail/3p.png"
+    },
+    {
+      "index": 4,
+      "imagePrompt": "A dramatic comparison image showing a modest train budget being dwarfed by a towering stack of cash representing current costs.",
+      "image": "./images/ca_hispeed_rail/4p.png"
+    },
+    {
+      "index": 5,
+      "imagePrompt": "A shocked emoji face next to a multiplying budget symbol, with stacks of money increasing exponentially.",
+      "image": "./images/ca_hispeed_rail/5p.png"
+    },
+    {
+      "index": 6,
+      "imagePrompt": "A futuristic calendar showing years rapidly flipping past, with a train route map slowly being completed.",
+      "image": "./images/ca_hispeed_rail/6p.png"
+    },
+    {
+      "index": 7,
+      "imagePrompt": "A complex maze with a train at the start, symbolizing the challenges and detours in the project.",
+      "image": "./images/ca_hispeed_rail/7p.png"
+    },
+    {
+      "index": 8,
+      "imagePrompt": "An image of a high-speed train trying to navigate a rocky, challenging terrain, with a speedometer stuck at a lower speed.",
+      "image": "./images/ca_hispeed_rail/8p.png"
+    },
+    {
+      "index": 9,
+      "imagePrompt": "A checklist with multiple unchecked boxes, symbolizing unresolved issues.",
+      "image": "./images/ca_hispeed_rail/9p.png"
+    },
+    {
+      "index": 10,
+      "imagePrompt": "A financial balance scale tipping towards 'Expenses', overshadowing 'Revenue', with a train on the scale.",
+      "image": "./images/ca_hispeed_rail/10p.png"
+    },
+    {
+      "index": 11,
+      "imagePrompt": "A partially constructed high-speed rail line with cranes and workers actively building tracks.",
+      "image": "./images/ca_hispeed_rail/11p.png"
+    },
+    {
+      "index": 12,
+      "imagePrompt": "A sprawling construction map with red progress markers indicating completed and pending sections of the rail.",
+      "image": "./images/ca_hispeed_rail/12p.png"
+    },
+    {
+      "index": 13,
+      "imagePrompt": "A thought bubble with a giant question mark over an image of a halted construction site.",
+      "image": "./images/ca_hispeed_rail/13p.png"
+    },
+    {
+      "index": 14,
+      "imagePrompt": "An image showing a busy construction site, next to a green 'Eco-Friendly' badge and a rail line.",
+      "image": "./images/ca_hispeed_rail/14p.png"
+    },
+    {
+      "index": 15,
+      "imagePrompt": "A contrast image showing a smoothly operating Japanese Shinkansen next to the under-construction California rail, symbolizing efficiency versus challenges.",
+      "image": "./images/ca_hispeed_rail/15p.png"
+    },
+    {
+      "index": 16,
+      "imagePrompt": "A complex puzzle with pieces labeled land acquisition, environmental assessment, and political issues, partially assembled over a map of California.",
+      "image": "./images/ca_hispeed_rail/16p.png"
+    },
+    {
+      "index": 17,
+      "imagePrompt": "An inquisitive eye looking through a magnifying glass at a high-speed train project, representing investigation and scrutiny.",
+      "image": "./images/ca_hispeed_rail/17p.png"
+    },
+    {
+      "index": 18,
+      "imagePrompt": "A thoughtful scene with a blueprint and a model train, symbolizing careful planning and analysis.",
+      "image": "./images/ca_hispeed_rail/18p.png"
+    },
+    {
+      "index": 19,
+      "imagePrompt": "An image of a blueprint with a giant pencil sketching out a meticulous plan, symbolizing the importance of initial planning.",
+      "image": "./images/ca_hispeed_rail/19p.png"
+    },
+    {
+      "index": 20,
+      "imagePrompt": "A split image showing the chaotic construction site of California's rail project on one side and the sleek, efficient operation of Japan's Shinkansen on the other, highlighting lessons learned.",
+      "image": "./images/ca_hispeed_rail/20p.png"
+    }
+  ],
+  "filename": "ca_hispeed_rail",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "title": "Googleが変更したAI倫理指針について",
+  "description": "Googleが2024年に発表したAI倫理指針の変更点とその影響について、高校生向けの分かりやすい解説",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": ["春玲", "太郎", "山田先生"],
+  "speakers": ["Announcer", "Student", "Teacher"],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。",
+      "imagePrompt": "A sleek technology podcast studio setup with modern microphones, ambient lighting, and digital displays showing tech news headlines"
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今日は、Googleが発表したAI倫理指針の変更について解説します。",
+      "imagePrompt": "Google's headquarters with the company logo, surrounded by floating digital ethics symbols and AI-related iconography"
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、ニュースでGoogleがAIの使い方についてのルールを変えたって聞いたんですけど、どういうことなんですか？",
+      "imagePrompt": "A digital news screen displaying headlines about Google's AI policy changes, with scrolling text and data visualizations"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "うん、大きなニュースだよね。",
+      "imagePrompt": "Multiple news websites and social media feeds showing viral discussions about Google's AI announcement"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "GoogleはAIを開発する時の「これはやらない」というルールを変更したんだ。",
+      "imagePrompt": "A symbolic visualization of changing rules: old rulebook transforming into new digital guidelines with AI-related icons"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "特に重要なのは、今まで禁止していた軍事利用や監視技術への応用を可能にしたことだよ。",
+      "imagePrompt": "Abstract representation of AI technology with military and surveillance elements, showing transformation from restricted to permitted use"
+    },
+    {
+      "speaker": "Student",
+      "text": "えっ、なんでそんな怖そうなことを許可するんですか？",
+      "imagePrompt": "A split screen showing contrasting images of peaceful AI applications versus military technology, with a question mark between them"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "大きく分けて2つの理由があるんだ。",
+      "imagePrompt": "Two illuminated paths diverging from a central AI core, representing different strategic reasons"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "1つは、世界の中で民主主義の国々がAI開発で主導権を握るべきだという考え方。",
+      "imagePrompt": "World map highlighting democratic nations connected by glowing AI networks, showing technological leadership"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "もう1つは、国の安全保障に貢献したいという理由だね。",
+      "imagePrompt": "Digital shield protecting a symbolic representation of national infrastructure with AI components"
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、AIを軍事に使うのって危険じゃないんですか？",
+      "imagePrompt": "A digital scale balancing AI technology and military applications, with warning symbols floating around"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り、慎重に考える必要があるね。",
+      "imagePrompt": "Complex maze of ethical considerations with AI symbols, showing multiple pathways and decision points"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は2018年に、Googleの社員たちが軍事目的でのAI利用に反対して大規模な抗議活動を行ったんだ。",
+      "imagePrompt": "Historic news coverage of 2018 Google protests, showing protest signs and newspaper headlines"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その時にこの制限が作られたんだよ。",
+      "imagePrompt": "Timeline visualization showing the 2018 restriction implementation at Google with policy documents"
+    },
+    {
+      "speaker": "Student",
+      "text": "じゃあ、なんで今になって変えることにしたんですか？",
+      "imagePrompt": "Dynamic chart showing evolving AI landscape from 2018 to 2024 with changing industry factors"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "大きな理由の1つは、競争が激しくなってきたことだね。",
+      "imagePrompt": "Global AI race visualization with multiple tech companies' logos and rising competition graphs"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、OpenエーアイやAnthropicといった他のAI企業は、すでに軍事企業と協力関係を結んでいるんだ。",
+      "caption": "例えば、OpenAIやAnthropicといった他のAI企業は、すでに軍事企業と協力関係を結んでいるんだ。",
+      "imagePrompt": "Network diagram showing connections between major AI companies and defense sector partners"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それに、中国との技術競争も激しくなってきている。",
+      "imagePrompt": "Split screen showing US and Chinese AI developments with competitive metrics and arrows"
+    },
+    {
+      "speaker": "Student",
+      "text": "中国と関係があるんですか？",
+      "imagePrompt": "World map highlighting AI development centers in China and their global influence"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。最近、中国のAI企業がChatGPTみたいな高性能なAIを無料で公開して話題になったんだよ。",
+      "imagePrompt": "Comparison display of various AI chatbot interfaces with performance metrics and user statistics"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "アメリカの企業は、中国にAI開発で追い抜かれることを心配しているんだ。",
+      "imagePrompt": "Racing metaphor showing AI development progress bars between US and Chinese tech companies"
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、AIを兵器に使うのは怖いです...",
+      "imagePrompt": "Abstract representation of AI ethics concerns with warning symbols and philosophical questions"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その心配はもっともだね。",
+      "imagePrompt": "Balanced scale showing AI benefits versus potential risks in military applications"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "だからGoogleは、AIの使用には人間による監督を入れること、そして人権や国際法を守ることを約束しているんだ。",
+      "imagePrompt": "Symbolic representation of AI oversight with human figures, legal scales, and protective shields"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、どこまでそれが守られるのか、私たちがしっかり見ていく必要があるよ。",
+      "imagePrompt": "Watchdog monitors surrounding AI systems with transparency meters and oversight indicators"
+    },
+    {
+      "speaker": "Student",
+      "text": "Googleの社員さんたちは、今回の変更をどう思っているんでしょう？",
+      "imagePrompt": "Social media feed showing diverse opinions and commentary on Google's policy change"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実際、今でも一部の社員は、イスラエル軍向けのAI技術提供に反対する声を上げているんだ。",
+      "imagePrompt": "Digital protest signs and online petition platforms showing current employee concerns"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "技術の使い方については、常に議論が必要なんだよ。",
+      "imagePrompt": "Forum-style visualization showing ongoing debates about AI technology applications"
+    },
+    {
+      "speaker": "Student",
+      "text": "技術って、使い方次第で良いことにも悪いことにもなるんですね。",
+      "imagePrompt": "Yin-yang symbol made of AI components showing dual nature of technology applications"
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。だからこそ私たちは、新しい技術がどのように使われるのか、常に関心を持ち続けることが大切なんだ。",
+      "imagePrompt": "Community oversight visualization with multiple stakeholders monitoring AI development"
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ご視聴、ありがとうございました。",
+      "imagePrompt": "Elegant outro screen with tech-themed thank you message and podcast branding"
+    },
+    {
+      "speaker": "Announcer",
+      "text": "次回の放送もお楽しみに。",
+      "imagePrompt": "Preview teaser for next episode with dynamic AI-related graphics and 'coming soon' text"
+    }
+  ]
+}
