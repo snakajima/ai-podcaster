@@ -126,14 +126,16 @@ const createVideo = (
     filterComplexParts.push(
       // Resize background image to match canvas dimensions
       `[${element.imageIndex}:v]scale=${canvasInfo.width}:${canvasInfo.height},setsar=1,trim=duration=${element.duration}[bg${index}];` +
-      `[${imageCount + index}:v]scale=${canvasInfo.width * 2}:${canvasInfo.height * 2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[cap${index}];` +
-      `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`,
+        `[${imageCount + index}:v]scale=${canvasInfo.width * 2}:${canvasInfo.height * 2},setsar=1,format=rgba,zoompan=z=zoom+0.0004:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[cap${index}];` +
+        `[bg${index}][cap${index}]overlay=(W-w)/2:(H-h)/2:format=auto[v${index}]`,
     );
   });
 
   // Concatenate the trimmed images
   const concatInput = captions.map((_, index) => `[v${index}]`).join("");
-  filterComplexParts.push(`${concatInput}concat=n=${captions.length}:v=1:a=0[v]`);
+  filterComplexParts.push(
+    `${concatInput}concat=n=${captions.length}:v=1:a=0[v]`,
+  );
 
   // Apply the filter complex for concatenation and map audio input
   command
@@ -258,7 +260,13 @@ const main = async () => {
   const captionsWithTitle = [titleInfo].concat(captions);
   // const captionsWithTitle = [captions[0], captions[1], captions[5], captions[8]];
 
-  createVideo(audioPath, captionsWithTitle, jsonDataTm.images, outputVideoPath, canvasInfo);
+  createVideo(
+    audioPath,
+    captionsWithTitle,
+    jsonDataTm.images,
+    outputVideoPath,
+    canvasInfo,
+  );
 };
 
 main();

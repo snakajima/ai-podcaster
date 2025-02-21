@@ -77,7 +77,7 @@ async function generateImage(
 }
 
 const image_agent = async (namedInputs: {
-  row: { index: number, imagePrompt: string };
+  row: { index: number; imagePrompt: string };
   suffix: string;
   script: PodcastScript;
 }) => {

@@ -28,29 +28,50 @@ function splitIntoSentences(
     );
 }
 
+interface Replacement {
+  from: string;
+  to: string;
+}
+
+function replacePairs(str: string, replacements: Replacement[]): string {
+  replacements.forEach(({ from, to }) => {
+    // Escape any special regex characters in the 'from' string.
+    const escapedFrom = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const regex = new RegExp(escapedFrom, "g");
+    str = str.replace(regex, to);
+  });
+  return str;
+}
+
+const replacements: Replacement[] = [
+  { from: "Anthropic", to: "アンスロピック" },
+];
+
 const main = async () => {
   const arg2 = process.argv[2];
   const scriptPath = path.resolve(arg2);
   const scriptData = fs.readFileSync(scriptPath, "utf-8");
   const script = JSON.parse(scriptData) as PodcastScript;
 
-  // Transfer imagePrompts to images.
-  script.images = [];
-  script.script.forEach((element, index) => {
-    element.imageIndex = index;
-    script.images.push({
-      imagePrompt: element.imagePrompt,
-      index,
-      image: undefined
+  if (script.images === undefined) {
+    // Transfer imagePrompts to images.
+    script.images = [];
+    script.script.forEach((element, index) => {
+      element.imageIndex = index;
+      script.images.push({
+        imagePrompt: element.imagePrompt,
+        index,
+        image: undefined,
+      });
+      delete element.imagePrompt;
     });
-    delete element.imagePrompt;
-  });
+  }
 
   script.script = script.script.reduce<ScriptData[]>((prev, element) => {
-    splitIntoSentences(element.text, "。", 10).forEach((sentence) => {
-      splitIntoSentences(sentence, "？", 10).forEach((sentence) => {
-        splitIntoSentences(sentence, "！", 10).forEach((sentence) => {
-          splitIntoSentences(sentence, "、", 15).forEach((sentence) => {
+    splitIntoSentences(element.text, "。", 7).forEach((sentence) => {
+      splitIntoSentences(sentence, "？", 7).forEach((sentence) => {
+        splitIntoSentences(sentence, "！", 7).forEach((sentence) => {
+          splitIntoSentences(sentence, "、", 7).forEach((sentence) => {
             prev.push({ ...element, text: sentence });
           });
         });
