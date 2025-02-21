@@ -1,0 +1,621 @@
+{
+  "title": "AIチップ革命：Groqが切り開く新時代",
+  "description": "AIチップスタートアップGroqの技術革新と、それが私たちの未来に与える影響について、高校生にも分かりやすく解説する対話形式の教材",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "アナウンサー",
+    "太郎",
+    "先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "皆さん、こんにちは。",
+      "imageIndex": 0,
+      "filename": "groq_2025feb0",
+      "duration": 1.9196
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今回のエピソードでは、",
+      "imageIndex": 0,
+      "filename": "groq_2025feb1",
+      "duration": 2.1808
+    },
+    {
+      "speaker": "Announcer",
+      "text": "AIの世界に革命を起こそうとしている注目のスタートアップ企業「グロック」をご紹介します。",
+      "imageIndex": 0,
+      "caption": "AIの世界に革命を起こそうとしている注目のスタートアップ企業「Groq」をご紹介します。",
+      "filename": "groq_2025feb2",
+      "duration": 5.8641
+    },
+    {
+      "speaker": "Announcer",
+      "text": "彼らが開発した新しいAIチップは、",
+      "imageIndex": 0,
+      "filename": "groq_2025feb3",
+      "duration": 3.1995999999999998
+    },
+    {
+      "speaker": "Announcer",
+      "text": "まるで「完全予約制レストラン」のように効率的に動作し、",
+      "imageIndex": 0,
+      "filename": "groq_2025feb4",
+      "duration": 4.0355
+    },
+    {
+      "speaker": "Announcer",
+      "text": "従来の5倍もの速さでAIの計算を処理できるのです。",
+      "imageIndex": 0,
+      "filename": "groq_2025feb5",
+      "duration": 4.21835
+    },
+    {
+      "speaker": "Announcer",
+      "text": "GoogleのエンジニアだったJonathan Rossが「誰もが使えるAI」を目指して立ち上げたこの会社は、",
+      "imageIndex": 0,
+      "filename": "groq_2025feb6",
+      "duration": 5.9947
+    },
+    {
+      "speaker": "Announcer",
+      "text": "私たちの未来をどのように変えていくのでしょうか。",
+      "imageIndex": 0,
+      "filename": "groq_2025feb7",
+      "duration": 3.4608
+    },
+    {
+      "speaker": "Announcer",
+      "text": "高校生の太郎くんと先生との対話を通じて、",
+      "imageIndex": 0,
+      "filename": "groq_2025feb8",
+      "duration": 3.61755
+    },
+    {
+      "speaker": "Announcer",
+      "text": "最新のAI技術の世界をわかりやすく解き明かしていきます。",
+      "imageIndex": 0,
+      "filename": "groq_2025feb9",
+      "duration": 4.2706
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、最近ニュースでグロックというAIチップの会社のことを見たんですが、",
+      "imageIndex": 1,
+      "caption": "先生、最近ニュースでGroqというAIチップの会社のことを見たんですが、",
+      "filename": "groq_2025feb10",
+      "duration": 4.5318499999999995
+    },
+    {
+      "speaker": "Student",
+      "text": "すごく話題になってるみたいですね。",
+      "imageIndex": 1,
+      "filename": "groq_2025feb11",
+      "duration": 2.33755
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。グロックは今、",
+      "imageIndex": 2,
+      "caption": "そうだね。Groqは今、",
+      "filename": "groq_2025feb12",
+      "duration": 3.14735
+    },
+    {
+      "speaker": "Teacher",
+      "text": "AIの世界で大きな注目を集めている会社なんだよ。",
+      "imageIndex": 2,
+      "filename": "groq_2025feb13",
+      "duration": 4.1139
+    },
+    {
+      "speaker": "Teacher",
+      "text": "特に、AIの計算を超高速で処理できる新しいチップを開発したことで話題になっているんだ。",
+      "imageIndex": 2,
+      "filename": "groq_2025feb14",
+      "duration": 6.9351
+    },
+    {
+      "speaker": "Student",
+      "text": "AIのチップって、",
+      "imageIndex": 3,
+      "filename": "groq_2025feb15",
+      "duration": 1.63225
+    },
+    {
+      "speaker": "Student",
+      "text": "今はエヌビディアが作っているジーピーユーが主流だと聞きましたが、",
+      "imageIndex": 3,
+      "caption": "今はNVIDIAが作っているGPUが主流だと聞きましたが、",
+      "filename": "groq_2025feb16",
+      "duration": 3.4608
+    },
+    {
+      "speaker": "Student",
+      "text": "何が違うんですか？",
+      "imageIndex": 3,
+      "filename": "groq_2025feb17",
+      "duration": 1.52775
+    },
+    {
+      "speaker": "Teacher",
+      "text": "いい質問だね。簡単に例えると、",
+      "imageIndex": 4,
+      "filename": "groq_2025feb18",
+      "duration": 4.06165
+    },
+    {
+      "speaker": "Teacher",
+      "text": "エヌビディアのジーピーユーは「万能選手」のようなもので、",
+      "imageIndex": 4,
+      "caption": "NVIDIAのGPUは「万能選手」のようなもので、",
+      "filename": "groq_2025feb19",
+      "duration": 3.72205
+    },
+    {
+      "speaker": "Teacher",
+      "text": "様々な計算を並列で処理できる。",
+      "imageIndex": 4,
+      "filename": "groq_2025feb20",
+      "duration": 3.0428499999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "一方、グロックのエルピーユー（Language Processing Unit）は「言語処理の専門選手」なんだ。",
+      "imageIndex": 4,
+      "caption": "一方、GroqのLPU（Language Processing Unit）は「言語処理の専門選手」なんだ。",
+      "filename": "groq_2025feb21",
+      "duration": 4.21835
+    },
+    {
+      "speaker": "Teacher",
+      "text": "特に文章を生成するAIの処理に特化していて、",
+      "imageIndex": 4,
+      "filename": "groq_2025feb22",
+      "duration": 3.9309999999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その速度がジーピーユーの5倍も速いんだよ。",
+      "imageIndex": 4,
+      "caption": "その速度がGPUの5倍も速いんだよ。",
+      "filename": "groq_2025feb23",
+      "duration": 3.40855
+    },
+    {
+      "speaker": "Student",
+      "text": "へえ！でも、なんでそんなに速くできるんですか？",
+      "imageIndex": 5,
+      "filename": "groq_2025feb24",
+      "duration": 2.91225
+    },
+    {
+      "speaker": "Teacher",
+      "text": "面白い仕組みがあるんだ。",
+      "imageIndex": 6,
+      "filename": "groq_2025feb25",
+      "duration": 2.3897999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "レストランに例えると分かりやすいかな。",
+      "imageIndex": 6,
+      "filename": "groq_2025feb26",
+      "duration": 2.9905999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ジーピーユーは「ウォークイン方式」のレストランのように、",
+      "imageIndex": 6,
+      "caption": "GPUは「ウォークイン方式」のレストランのように、",
+      "filename": "groq_2025feb27",
+      "duration": 3.4869499999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "お客さん（計算処理）が来た順番に対応する。",
+      "imageIndex": 6,
+      "filename": "groq_2025feb28",
+      "duration": 2.9905999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、グロックのエルピーユーは「完全予約制」のレストランみたいに、",
+      "imageIndex": 6,
+      "caption": "でも、GroqのLPUは「完全予約制」のレストランみたいに、",
+      "filename": "groq_2025feb29",
+      "duration": 4.1922500000000005
+    },
+    {
+      "speaker": "Teacher",
+      "text": "あらかじめ全ての処理のスケジュールを決めているんだ。",
+      "imageIndex": 6,
+      "filename": "groq_2025feb30",
+      "duration": 3.5391999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "これにより無駄な待ち時間がなくなって、",
+      "imageIndex": 6,
+      "filename": "groq_2025feb31",
+      "duration": 3.0428499999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "とても効率的に動けるんだよ。",
+      "imageIndex": 6,
+      "filename": "groq_2025feb32",
+      "duration": 2.651
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！でも、",
+      "imageIndex": 7,
+      "filename": "groq_2025feb33",
+      "duration": 1.6845
+    },
+    {
+      "speaker": "Student",
+      "text": "このグロックという会社はどうやって生まれたんですか？",
+      "imageIndex": 7,
+      "caption": "このGroqという会社はどうやって生まれたんですか？",
+      "filename": "groq_2025feb34",
+      "duration": 2.78165
+    },
+    {
+      "speaker": "Teacher",
+      "text": "創業者のJonathan Rossという人は、",
+      "imageIndex": 8,
+      "filename": "groq_2025feb35",
+      "duration": 3.0428499999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "もともとGoogleでティーピーユー（Tensor Processing Unit）というAIチップを開発していたんだ。",
+      "imageIndex": 8,
+      "caption": "もともとGoogleでTPU（Tensor Processing Unit）というAIチップを開発していたんだ。",
+      "filename": "groq_2025feb36",
+      "duration": 4.68855
+    },
+    {
+      "speaker": "Teacher",
+      "text": "でも、「AIの計算コストが高すぎる」という問題に気づいて、",
+      "imageIndex": 8,
+      "filename": "groq_2025feb37",
+      "duration": 4.40125
+    },
+    {
+      "speaker": "Teacher",
+      "text": "もっと効率的なチップを作りたいと考えて起業したんだよ。",
+      "imageIndex": 8,
+      "filename": "groq_2025feb38",
+      "duration": 4.1661
+    },
+    {
+      "speaker": "Student",
+      "text": "コストが高いってことは、",
+      "imageIndex": 9,
+      "filename": "groq_2025feb39",
+      "duration": 1.84125
+    },
+    {
+      "speaker": "Student",
+      "text": "普通の人や小さな会社はAIを使えないってことですか？",
+      "imageIndex": 9,
+      "filename": "groq_2025feb40",
+      "duration": 3.4869499999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。だからグロックは、",
+      "imageIndex": 10,
+      "caption": "その通り。だからGroqは、",
+      "filename": "groq_2025feb41",
+      "duration": 3.40855
+    },
+    {
+      "speaker": "Teacher",
+      "text": "クラウドサービスを通じて、",
+      "imageIndex": 10,
+      "filename": "groq_2025feb42",
+      "duration": 2.4943
+    },
+    {
+      "speaker": "Teacher",
+      "text": "誰でも手軽に高性能なAI処理が使えるようにしているんだ。",
+      "imageIndex": 10,
+      "filename": "groq_2025feb43",
+      "duration": 4.349
+    },
+    {
+      "speaker": "Teacher",
+      "text": "しかも、百万文字の処理で30セント（約50円）という、",
+      "imageIndex": 10,
+      "filename": "groq_2025feb44",
+      "duration": 4.1661
+    },
+    {
+      "speaker": "Teacher",
+      "text": "とても安い価格で提供しているんだよ。",
+      "imageIndex": 10,
+      "filename": "groq_2025feb45",
+      "duration": 3.14735
+    },
+    {
+      "speaker": "Student",
+      "text": "すごく安いですね！",
+      "imageIndex": 11,
+      "filename": "groq_2025feb46",
+      "duration": 1.7106000000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "これって、私たちの生活にも影響があるんですか？",
+      "imageIndex": 11,
+      "filename": "groq_2025feb47",
+      "duration": 3.4347
+    },
+    {
+      "speaker": "Teacher",
+      "text": "大きな影響があるよ。",
+      "imageIndex": 12,
+      "filename": "groq_2025feb48",
+      "duration": 2.1808
+    },
+    {
+      "speaker": "Teacher",
+      "text": "例えば、自動運転車の判断をより速くしたり、",
+      "imageIndex": 12,
+      "filename": "groq_2025feb49",
+      "duration": 3.4608
+    },
+    {
+      "speaker": "Teacher",
+      "text": "病院での診断支援をリアルタイムで行ったり。",
+      "imageIndex": 12,
+      "filename": "groq_2025feb50",
+      "duration": 3.5391999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "将来的には、スマートフォンの音声アシスタントがもっと賢く、",
+      "imageIndex": 12,
+      "filename": "groq_2025feb51",
+      "duration": 4.89755
+    },
+    {
+      "speaker": "Teacher",
+      "text": "素早く応答できるようになるかもしれないんだ。",
+      "imageIndex": 12,
+      "filename": "groq_2025feb52",
+      "duration": 3.4869499999999998
+    },
+    {
+      "speaker": "Student",
+      "text": "面白いですね。これからのAIの発展が楽しみになってきました！",
+      "imageIndex": 13,
+      "filename": "groq_2025feb53",
+      "duration": 4.08775
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。グロックのようなイノベーションによって、",
+      "imageIndex": 14,
+      "caption": "そうだね。Groqのようなイノベーションによって、",
+      "filename": "groq_2025feb54",
+      "duration": 4.32285
+    },
+    {
+      "speaker": "Teacher",
+      "text": "AIがより身近で使いやすいものになっていくんだ。",
+      "imageIndex": 14,
+      "filename": "groq_2025feb55",
+      "duration": 3.4347
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ただし、同時に私たちは、",
+      "imageIndex": 14,
+      "filename": "groq_2025feb56",
+      "duration": 2.3897999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "この技術が社会にもたらす影響についてもしっかり考えていく必要があるね。",
+      "imageIndex": 14,
+      "filename": "groq_2025feb57",
+      "duration": 5.0543
+    },
+    {
+      "speaker": "Student",
+      "text": "はい！これからもAIの進化について、",
+      "imageIndex": 15,
+      "filename": "groq_2025feb58",
+      "duration": 2.7032499999999997
+    },
+    {
+      "speaker": "Student",
+      "text": "もっと勉強していきたいと思います。",
+      "imageIndex": 15,
+      "filename": "groq_2025feb59",
+      "duration": 2.0241
+    },
+    {
+      "speaker": "Student",
+      "text": "ありがとうございました！",
+      "imageIndex": 15,
+      "filename": "groq_2025feb60",
+      "duration": 1.4494
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今回のエピソードでは、",
+      "imageIndex": 16,
+      "filename": "groq_2025feb61",
+      "duration": 2.1808
+    },
+    {
+      "speaker": "Announcer",
+      "text": "AIチップの新しい革命を起こしているグロックについて学びました。",
+      "imageIndex": 16,
+      "caption": "AIチップの新しい革命を起こしているGroqについて学びました。",
+      "filename": "groq_2025feb62",
+      "duration": 4.55795
+    },
+    {
+      "speaker": "Announcer",
+      "text": "ジーピーユーとは異なるアプローチで高速処理を実現するエルピーユーの仕組み、",
+      "imageIndex": 16,
+      "caption": "GPUとは異なるアプローチで高速処理を実現するLPUの仕組み、",
+      "filename": "groq_2025feb63",
+      "duration": 5.158799999999999
+    },
+    {
+      "speaker": "Announcer",
+      "text": "そしてAIを「誰もが使える技術」にするというビジョン。",
+      "imageIndex": 16,
+      "filename": "groq_2025feb64",
+      "duration": 4.0355
+    },
+    {
+      "speaker": "Announcer",
+      "text": "私たちの生活は、",
+      "imageIndex": 16,
+      "filename": "groq_2025feb65",
+      "duration": 2.0502
+    },
+    {
+      "speaker": "Announcer",
+      "text": "自動運転から医療診断まで、",
+      "imageIndex": 16,
+      "filename": "groq_2025feb66",
+      "duration": 2.651
+    },
+    {
+      "speaker": "Announcer",
+      "text": "こうした技術革新によってどんどん便利になっていくことでしょう。",
+      "imageIndex": 16,
+      "filename": "groq_2025feb67",
+      "duration": 4.14
+    },
+    {
+      "speaker": "Announcer",
+      "text": "次回以降は、AIがもたらす別の側面についても考えて行きます。",
+      "imageIndex": 16,
+      "filename": "groq_2025feb68",
+      "duration": 5.5804
+    },
+    {
+      "speaker": "Announcer",
+      "text": "引き続きご視聴ください。",
+      "imageIndex": 16,
+      "filename": "groq_2025feb69",
+      "duration": 2.0502
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "imagePrompt": "A futuristic AI chip highlighted in glowing blue light, symbolizing cutting-edge technology and efficiency, with digital streams representing fast data processing.",
+      "image": "./images/groq_2025feb/0p.png"
+    },
+    {
+      "index": 1,
+      "imagePrompt": "A digital news article featuring Groq, an AI chip company, with a dynamic layout and futuristic design elements.",
+      "image": "./images/groq_2025feb/1p.png"
+    },
+    {
+      "index": 2,
+      "imagePrompt": "A high-tech lab scene with a new AI chip, surrounded by holographic displays and data charts.",
+      "image": "./images/groq_2025feb/2p.png"
+    },
+    {
+      "index": 3,
+      "imagePrompt": "A comparison between NVIDIA's GPU and Groq's LPU, with digital icons and specs highlighted, showcasing their differences.",
+      "image": "./images/groq_2025feb/3p.png"
+    },
+    {
+      "index": 4,
+      "imagePrompt": "A specialized hardware, with visual elements showing speed and focus.",
+      "image": "./images/groq_2025feb/4p.png"
+    },
+    {
+      "index": 5,
+      "imagePrompt": "An inquisitive visual metaphor of speed and efficiency, possibly featuring racing elements or fast-moving digital data.",
+      "image": "./images/groq_2025feb/5p.png"
+    },
+    {
+      "index": 6,
+      "imagePrompt": "An analogy of a high-tech, reservation-only restaurant, where digital data is served efficiently, representing Groq's LPU.",
+      "image": "./images/groq_2025feb/6p.png"
+    },
+    {
+      "index": 7,
+      "imagePrompt": "A visual timeline of Groq's inception, starting from Jonathan Ross at Google to the founding of Groq, with key milestones highlighted.",
+      "image": "./images/groq_2025feb/7p.png"
+    },
+    {
+      "index": 8,
+      "imagePrompt": "An image of an innovation, surrounded by tech designs and futuristic elements.",
+      "image": "./images/groq_2025feb/8p.png"
+    },
+    {
+      "index": 9,
+      "imagePrompt": "A conceptual image showing barriers to AI access for small businesses, with cost symbols and a locked AI interface.",
+      "image": "./images/groq_2025feb/9p.png"
+    },
+    {
+      "index": 10,
+      "imagePrompt": "An image of a cloud-based AI platform, easily accessible and affordable, with digital currency symbols and a user-friendly interface.",
+      "image": "./images/groq_2025feb/10p.png"
+    },
+    {
+      "index": 11,
+      "imagePrompt": "A futuristic cityscape being transformed by AI technology, showcasing various applications like autonomous vehicles and smart devices.",
+      "image": "./images/groq_2025feb/11p.png"
+    },
+    {
+      "index": 12,
+      "imagePrompt": "An advanced AI-driven future with self-driving cars, real-time medical diagnostics, and intelligent voice assistants in action.",
+      "image": "./images/groq_2025feb/12p.png"
+    },
+    {
+      "index": 13,
+      "imagePrompt": "An optimistic vision of the future driven by AI, with bright colors and symbols of innovation and discovery.",
+      "image": "./images/groq_2025feb/13p.png"
+    },
+    {
+      "index": 14,
+      "imagePrompt": "A balanced image of AI innovation and its societal impacts, showing both progress and the need for thoughtful consideration.",
+      "image": "./images/groq_2025feb/14p.png"
+    },
+    {
+      "index": 15,
+      "imagePrompt": "AI technology, surrounded by books and digital tools in a futuristic setting.",
+      "image": "./images/groq_2025feb/15p.png"
+    },
+    {
+      "index": 16,
+      "imagePrompt": "A comprehensive collage representing the impact of Groq's AI chip on various industries, from autonomous vehicles to healthcare.",
+      "image": "./images/groq_2025feb/16p.png"
+    }
+  ],
+  "filename": "groq_2025feb",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  }
+}

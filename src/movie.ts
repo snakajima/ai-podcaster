@@ -180,6 +180,10 @@ const main = async () => {
   const data = fs.readFileSync(scriptPath, "utf-8");
   const jsonData: PodcastScript = JSON.parse(data);
 
+  const tmScriptPath = path.resolve("./output/" + name + ".json");
+  const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
+  const jsonDataTm: PodcastScript = JSON.parse(dataTm);
+
   const canvasInfo = {
     width: 1280, // not 1920
     height: 720, // not 1080
@@ -198,59 +202,28 @@ const main = async () => {
     console.error("Error generating PNG:", err);
   });
 
+  const captions: CaptionInfo[] = [];
   const promises = jsonData.script.map((element: ScriptData, index: number) => {
+    const imagePath = `./scratchpad/${name}_${index}.png`; // Output file path
     return renderJapaneseTextToPNG(
       element.caption ?? element.text,
-      `./scratchpad/${name}_${index}.png`, // Output file path
+      imagePath,
       canvasInfo,
-    ).catch((err) => {
+    ).then(() => {
+      const item = jsonDataTm.script[index];
+      const caption: CaptionInfo = {
+        pathCaption: path.resolve(imagePath),
+        imageIndex: element.imageIndex,
+        duration: item.duration,
+      };
+      captions.push(caption);
+    }).catch((err) => {
       console.error("Error generating PNG:", err);
     });
   });
   await Promise.all(promises);
 
-  const tmScriptPath = path.resolve("./output/" + name + ".json");
-  const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
-  const jsonDataTm: PodcastScript = JSON.parse(dataTm);
-
-  // add images
-  /*
-  const imageInfo = jsonDataTm.imageInfo;
-  await imageInfo.forEach(async (element: { index: number; image: string }) => {
-    const { index, image } = element;
-    if (image) {
-      const imagePath = `./scratchpad/${name}_${index}.png`;
-      const imageText = await loadImage(imagePath);
-      const imageBG = await loadImage(image);
-      const bgWidth = imageBG.width;
-      const bgHeight = imageBG.height;
-      const viewWidth = (bgWidth / bgHeight) * canvasInfo.height;
-      const canvas = createCanvas(canvasInfo.width, canvasInfo.height);
-      const ctx = canvas.getContext("2d");
-      ctx.drawImage(
-        imageBG,
-        (canvasInfo.width - viewWidth) / 2,
-        0,
-        viewWidth,
-        canvasInfo.height,
-      );
-      ctx.drawImage(imageText, 0, 0);
-      const buffer = canvas.toBuffer("image/png");
-      fs.writeFileSync(imagePath, buffer);
-    }
-  });
-  */
-
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
-  const captions: CaptionInfo[] = jsonDataTm.script.map(
-    (item: any, index: number) => {
-      return {
-        pathCaption: path.resolve(`./scratchpad/${name}_${index}.png`),
-        imageIndex: item.imageIndex,
-        duration: item.duration,
-      };
-    },
-  );
   const outputVideoPath = path.resolve("./output/" + name + "_ja.mp4");
   const titleInfo: CaptionInfo = {
     pathCaption: path.resolve(`./scratchpad/${name}_00.png`), // HACK

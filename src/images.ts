@@ -85,7 +85,7 @@ const image_agent = async (namedInputs: {
   const relativePath = `./images/${script.filename}/${row.index}${suffix}.png`;
   const imagePath = path.resolve(relativePath);
   if (fs.existsSync(imagePath)) {
-    console.log("cached", imagePath);
+    // console.log("cached", imagePath);
     return relativePath;
   }
 

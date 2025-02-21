@@ -21,12 +21,13 @@ OPENAI_API_KEY={your OpenAI key}
 ## Create a video
 
 1. Claudeを使って台本（PodcastScript）を作成
-2. セリフの分割（src/split.ts）
-3. Claudeを使って、セリフごとに text2image 向けのプロンプトを作成
-4. Youtubeライブ向けの縦動画であれば、その指示を追加（手作業）
-5. 音声ファイルの作成（src/main.tsを使って自動作成）
-6. 画像ファイルの作成（src/images.tsを使って自動生成）
-7. 映像ファイルの作成（src/movie.tsを使って自動生成）
+2. 各セリフにimagePromptを追加（src/imagep.tsを使用）
+3. セリフの分割（src/split.tsを使用、オプション）
+4. セリフの修正（src/fixtext.tsを使用、オプション）
+5. Youtubeライブ向けの縦動画であれば、その指示を追加（手作業）
+6. 音声ファイルの作成（src/main.tsを使って自動作成）
+7. 画像ファイルの作成（src/images.tsを使って自動生成）
+8. 映像ファイルの作成（src/movie.tsを使って自動生成）
 
 # Script format
 

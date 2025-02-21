@@ -1,0 +1,618 @@
+{
+  "title": "条件付き確率と科学的推論",
+  "description": "条件付き確率の概念と、それが科学的推論やAIにどのように応用されているかについての、生徒と先生の対話形式での解説",
+  "tts": "nijivoice",
+  "voices": [
+    "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  ],
+  "charactors": [
+    "アナウンサー",
+    "太郎",
+    "先生"
+  ],
+  "speakers": [
+    "Announcer",
+    "Student",
+    "Teacher"
+  ],
+  "script": [
+    {
+      "speaker": "Announcer",
+      "text": "皆さん、こんにちは。",
+      "imageIndex": 0,
+      "filename": "probability0",
+      "duration": 1.89345
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今日は、私たちの日常生活や最新のAI技術にも深く関わる「条件付き確率」についてお話しします。",
+      "imageIndex": 0,
+      "filename": "probability1",
+      "duration": 7.32695
+    },
+    {
+      "speaker": "Announcer",
+      "text": "「歩道が濡れているときは雨が降っているかもしれない」—このような日常的な推測から、",
+      "imageIndex": 0,
+      "filename": "probability2",
+      "duration": 5.60285
+    },
+    {
+      "speaker": "Announcer",
+      "text": "AIが画像を認識する仕組みまで、",
+      "imageIndex": 0,
+      "filename": "probability3",
+      "duration": 2.8339
+    },
+    {
+      "speaker": "Announcer",
+      "text": "実は同じ考え方が使われているんです。",
+      "imageIndex": 0,
+      "filename": "probability4",
+      "duration": 3.17345
+    },
+    {
+      "speaker": "Announcer",
+      "text": "確率は単なる数学の問題ではなく、",
+      "imageIndex": 0,
+      "filename": "probability5",
+      "duration": 3.0951
+    },
+    {
+      "speaker": "Announcer",
+      "text": "科学的な考え方の基礎となる重要な概念です。",
+      "imageIndex": 0,
+      "filename": "probability6",
+      "duration": 3.8004
+    },
+    {
+      "speaker": "Announcer",
+      "text": "先生と太郎くんの対話を通じて、",
+      "imageIndex": 0,
+      "filename": "probability7",
+      "duration": 2.8861
+    },
+    {
+      "speaker": "Announcer",
+      "text": "確率の面白さと重要性を一緒に学んでいきましょう。",
+      "imageIndex": 0,
+      "filename": "probability8",
+      "duration": 3.72205
+    },
+    {
+      "speaker": "Student",
+      "text": "先生、今日は確率について質問があるんです。",
+      "imageIndex": 1,
+      "filename": "probability9",
+      "duration": 3.0951
+    },
+    {
+      "speaker": "Student",
+      "text": "条件付き確率って何ですか？",
+      "imageIndex": 1,
+      "filename": "probability10",
+      "duration": 2.1547
+    },
+    {
+      "speaker": "Teacher",
+      "text": "良い質問だね、太郎くん。",
+      "imageIndex": 2,
+      "filename": "probability11",
+      "duration": 2.6771499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "条件付き確率というのは、",
+      "imageIndex": 2,
+      "filename": "probability12",
+      "duration": 2.651
+    },
+    {
+      "speaker": "Teacher",
+      "text": "ある出来事が起きた時に、",
+      "imageIndex": 2,
+      "filename": "probability13",
+      "duration": 2.3636999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "別の出来事が起こる可能性がどのくらいあるかを表すものなんだ。",
+      "imageIndex": 2,
+      "filename": "probability14",
+      "duration": 4.40125
+    },
+    {
+      "speaker": "Student",
+      "text": "うーん、少し難しいですね。",
+      "imageIndex": 3,
+      "filename": "probability15",
+      "duration": 2.8861
+    },
+    {
+      "speaker": "Student",
+      "text": "具体的な例はありますか？",
+      "imageIndex": 3,
+      "filename": "probability16",
+      "duration": 1.7890000000000001
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうだね。分かりやすい例を出すと、",
+      "imageIndex": 4,
+      "filename": "probability17",
+      "duration": 3.72205
+    },
+    {
+      "speaker": "Teacher",
+      "text": "「歩道が濡れている時に、",
+      "imageIndex": 4,
+      "filename": "probability18",
+      "duration": 2.31145
+    },
+    {
+      "speaker": "Teacher",
+      "text": "雨が降っている確率」というのが条件付き確率の良い例なんだ。",
+      "imageIndex": 4,
+      "filename": "probability19",
+      "duration": 4.42735
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！歩道が濡れているのを見たら、",
+      "imageIndex": 5,
+      "filename": "probability20",
+      "duration": 2.86
+    },
+    {
+      "speaker": "Student",
+      "text": "たいてい、雨が降っているってことですよね？",
+      "imageIndex": 5,
+      "filename": "probability21",
+      "duration": 2.9644999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。これを数学的に書くと、ピー、カッコ、雨が降っている、縦棒、歩道が濡れている、カッコ閉じ、と表すんだ。",
+      "imageIndex": 6,
+      "caption": "その通り！これを数学的に書くと「P(雨が降っている | 歩道が濡れている)」と表すんだ。",
+      "filename": "probability22",
+      "duration": 8.16285
+    },
+    {
+      "speaker": "Teacher",
+      "text": "縦線の左側が「調べたいこと」で、",
+      "imageIndex": 6,
+      "filename": "probability23",
+      "duration": 3.069
+    },
+    {
+      "speaker": "Teacher",
+      "text": "右側が「既に分かっていること」というわけだね。",
+      "imageIndex": 6,
+      "filename": "probability24",
+      "duration": 3.4869499999999998
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、歩道が濡れているのは、",
+      "imageIndex": 7,
+      "filename": "probability25",
+      "duration": 1.97185
+    },
+    {
+      "speaker": "Student",
+      "text": "雨以外の理由もありますよね？",
+      "imageIndex": 7,
+      "filename": "probability26",
+      "duration": 2.0241
+    },
+    {
+      "speaker": "Student",
+      "text": "例えば、誰かが水まきをしたとか。",
+      "imageIndex": 7,
+      "filename": "probability27",
+      "duration": 2.23305
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。でも、",
+      "imageIndex": 8,
+      "caption": "その通り！でも、",
+      "filename": "probability28",
+      "duration": 2.7554999999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "歩道が濡れているおもな原因は雨だから、",
+      "caption": "歩道が濡れている主な原因は雨だから、",
+      "imageIndex": 8,
+      "filename": "probability29",
+      "duration": 3.3301999999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "この確率はかなり高いんだ。",
+      "imageIndex": 8,
+      "filename": "probability30",
+      "duration": 2.5987999999999998
+    },
+    {
+      "speaker": "Teacher",
+      "text": "つまり、歩道が濡れているのを見たら、",
+      "imageIndex": 8,
+      "filename": "probability31",
+      "duration": 2.7554999999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "「雨が降っている可能性が高い」と推測できるわけだね。",
+      "imageIndex": 8,
+      "filename": "probability32",
+      "duration": 3.9309999999999996
+    },
+    {
+      "speaker": "Student",
+      "text": "ああ、なるほど！",
+      "imageIndex": 9,
+      "filename": "probability33",
+      "duration": 1.3971500000000001
+    },
+    {
+      "speaker": "Student",
+      "text": "でも、これが科学とどう関係があるんですか？",
+      "imageIndex": 9,
+      "filename": "probability34",
+      "duration": 3.12125
+    },
+    {
+      "speaker": "Teacher",
+      "text": "実は、科学の考え方の基本なんだよ。",
+      "imageIndex": 10,
+      "filename": "probability35",
+      "duration": 3.2779499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "科学者は、観察した証拠、歩道が濡れている、から、",
+      "caption": "科学者は、観察した証拠（歩道が濡れている）から、",
+      "imageIndex": 10,
+      "filename": "probability36",
+      "duration": 5.26325
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その原因、雨が降っている、を推測することが多いんだ。",
+      "caption": "その原因（雨が降っている）を推測することが多いんだ。",
+      "imageIndex": 10,
+      "filename": "probability37",
+      "duration": 4.9237
+    },
+    {
+      "speaker": "Student",
+      "text": "へぇ、そうなんですか。",
+      "imageIndex": 11,
+      "filename": "probability38",
+      "duration": 1.76285
+    },
+    {
+      "speaker": "Student",
+      "text": "AIとかにも関係があるんですか？",
+      "imageIndex": 11,
+      "filename": "probability39",
+      "duration": 2.1285499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "もちろん。例えば、",
+      "imageIndex": 12,
+      "filename": "probability40",
+      "duration": 2.86
+    },
+    {
+      "speaker": "Teacher",
+      "text": "AIが写真を見て「これは猫の写真です」と判断する時も、",
+      "imageIndex": 12,
+      "filename": "probability41",
+      "duration": 4.2445
+    },
+    {
+      "speaker": "Teacher",
+      "text": "条件付き確率を使っているんだ。",
+      "imageIndex": 12,
+      "filename": "probability42",
+      "duration": 2.8339
+    },
+    {
+      "speaker": "Teacher",
+      "text": "「この特徴を持つ画像が与えられた時に、",
+      "imageIndex": 12,
+      "filename": "probability43",
+      "duration": 3.2257
+    },
+    {
+      "speaker": "Teacher",
+      "text": "それが猫である確率」を計算しているんだよ。",
+      "imageIndex": 12,
+      "filename": "probability44",
+      "duration": 3.2779499999999997
+    },
+    {
+      "speaker": "Student",
+      "text": "すごいですね！身近なところでこんなに使われているとは知りませんでした。",
+      "imageIndex": 13,
+      "filename": "probability45",
+      "duration": 4.68855
+    },
+    {
+      "speaker": "Teacher",
+      "text": "そうなんだ。昔、",
+      "imageIndex": 14,
+      "filename": "probability46",
+      "duration": 2.9644999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "マクスウェルという有名な物理学者は「この世界の本当の論理は確率の計算なんだ」と言ったんだよ。",
+      "imageIndex": 14,
+      "filename": "probability47",
+      "duration": 6.4388
+    },
+    {
+      "speaker": "Teacher",
+      "text": "なぜなら、現実の世界では、",
+      "imageIndex": 14,
+      "filename": "probability48",
+      "duration": 2.7554999999999996
+    },
+    {
+      "speaker": "Teacher",
+      "text": "絶対に確実なことよりも、",
+      "imageIndex": 14,
+      "filename": "probability49",
+      "duration": 2.6771499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "確率的な推論の方が役立つことが多いからなんだ。",
+      "imageIndex": 14,
+      "filename": "probability50",
+      "duration": 3.98325
+    },
+    {
+      "speaker": "Student",
+      "text": "なるほど！確率って、",
+      "imageIndex": 15,
+      "filename": "probability51",
+      "duration": 2.2592
+    },
+    {
+      "speaker": "Student",
+      "text": "数学の問題を解くためだけじゃなくて、",
+      "imageIndex": 15,
+      "filename": "probability52",
+      "duration": 2.54655
+    },
+    {
+      "speaker": "Student",
+      "text": "もっと大事な意味があったんですね。",
+      "imageIndex": 15,
+      "filename": "probability53",
+      "duration": 2.0502
+    },
+    {
+      "speaker": "Teacher",
+      "text": "その通り。確率は、",
+      "imageIndex": 16,
+      "caption": "その通り！確率は、",
+      "filename": "probability54",
+      "duration": 3.0951
+    },
+    {
+      "speaker": "Teacher",
+      "text": "不確かな世界で物事を理解し、",
+      "imageIndex": 16,
+      "filename": "probability55",
+      "duration": 2.9644999999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "判断を下すための強力な道具なんだよ。",
+      "imageIndex": 16,
+      "filename": "probability56",
+      "duration": 3.17345
+    },
+    {
+      "speaker": "Teacher",
+      "text": "科学の研究でも、",
+      "imageIndex": 16,
+      "filename": "probability57",
+      "duration": 2.1285499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "AIの開発でも、",
+      "imageIndex": 16,
+      "filename": "probability58",
+      "duration": 2.1285499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "私たちの日常生活でも、",
+      "imageIndex": 16,
+      "filename": "probability59",
+      "duration": 2.6771499999999997
+    },
+    {
+      "speaker": "Teacher",
+      "text": "とても重要な役割を果たしているんだ。",
+      "imageIndex": 16,
+      "filename": "probability60",
+      "duration": 3.17345
+    },
+    {
+      "speaker": "Announcer",
+      "text": "いかがでしたか？",
+      "imageIndex": 17,
+      "filename": "probability61",
+      "duration": 1.63225
+    },
+    {
+      "speaker": "Announcer",
+      "text": "今回は条件付き確率について学びました。",
+      "imageIndex": 17,
+      "filename": "probability62",
+      "duration": 3.38245
+    },
+    {
+      "speaker": "Announcer",
+      "text": "私たちが日常的におこなっている「もしかしたら…かもしれない」という推測が、",
+      "caption": "私たちが日常的に行っている「もしかしたら…かもしれない」という推測が、",
+      "imageIndex": 17,
+      "filename": "probability63",
+      "duration": 4.871449999999999
+    },
+    {
+      "speaker": "Announcer",
+      "text": "実は数学的な考え方に基づいているということ。",
+      "imageIndex": 17,
+      "filename": "probability64",
+      "duration": 3.9049
+    },
+    {
+      "speaker": "Announcer",
+      "text": "そして、その考え方が現代の科学技術、",
+      "imageIndex": 17,
+      "filename": "probability65",
+      "duration": 3.8265499999999997
+    },
+    {
+      "speaker": "Announcer",
+      "text": "特にAIの発展にも重要な役割を果たしているということを理解していただけたと思います。",
+      "imageIndex": 17,
+      "filename": "probability66",
+      "duration": 6.0207999999999995
+    },
+    {
+      "speaker": "Announcer",
+      "text": "確率は、不確実な世界をより良く理解するための、",
+      "imageIndex": 17,
+      "filename": "probability67",
+      "duration": 3.95715
+    },
+    {
+      "speaker": "Announcer",
+      "text": "私たちの強力な道具なのです。",
+      "imageIndex": 17,
+      "filename": "probability68",
+      "duration": 3.1249000000000002
+    },
+    {
+      "speaker": "Announcer",
+      "text": "次回もお楽しみに。",
+      "imageIndex": 17,
+      "filename": "probability69",
+      "duration": 2.1285499999999997
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "imagePrompt": "An abstract representation of conditional probability, featuring a wet sidewalk and rain, blending into a digital network symbolizing AI image recognition.",
+      "image": "./images/probability/0p.png"
+    },
+    {
+      "index": 1,
+      "imagePrompt": "A symbolic depiction of curiosity and inquiry, with abstract mathematical symbols floating around.",
+      "image": "./images/probability/1p.png"
+    },
+    {
+      "index": 2,
+      "imagePrompt": "A conceptual visualization of conditional probability, featuring interlinked events and percentage signs.",
+      "image": "./images/probability/2p.png"
+    },
+    {
+      "index": 3,
+      "imagePrompt": "An abstract illustration conveying a sense of confusion or contemplation, with soft blurred elements.",
+      "image": "./images/probability/3p.png"
+    },
+    {
+      "index": 4,
+      "imagePrompt": "An artistic representation of a wet sidewalk with rain, symbolizing conditional probability.",
+      "image": "./images/probability/4p.png"
+    },
+    {
+      "index": 5,
+      "imagePrompt": "A illustration of a wet sidewalk, with rain clouds overhead.",
+      "image": "./images/probability/5p.png"
+    },
+    {
+      "index": 6,
+      "imagePrompt": "Mathematical symbols representing conditional probability, with a focus on the equation format.",
+      "image": "./images/probability/6p.png"
+    },
+    {
+      "index": 7,
+      "imagePrompt": "An imaginative depiction of alternative scenarios for a wet sidewalk, like sprinklers or cleaning.",
+      "image": "./images/probability/7p.png"
+    },
+    {
+      "index": 8,
+      "imagePrompt": "A conceptual image showing high probability of rain as the cause of a wet sidewalk, with probability percentages.",
+      "image": "./images/probability/8p.png"
+    },
+    {
+      "index": 9,
+      "imagePrompt": "A thought-provoking image linking probability with scientific inquiry, featuring lab equipment and data.",
+      "image": "./images/probability/9p.png"
+    },
+    {
+      "index": 10,
+      "imagePrompt": "A creative representation of scientific deduction, with observational evidence leading to hypotheses.",
+      "image": "./images/probability/10p.png"
+    },
+    {
+      "index": 11,
+      "imagePrompt": "An imaginative link between probability and AI, with digital elements merging with scientific imagery.",
+      "image": "./images/probability/11p.png"
+    },
+    {
+      "index": 12,
+      "imagePrompt": "A futuristic scene of AI analyzing an image with cat features, highlighting probability calculations.",
+      "image": "./images/probability/12p.png"
+    },
+    {
+      "index": 13,
+      "imagePrompt": "A scene of surprising discovery, with everyday objects intertwining with mathematical elements.",
+      "image": "./images/probability/13p.png"
+    },
+    {
+      "index": 14,
+      "imagePrompt": "A Maxwell's equations.",
+      "image": "./images/probability/14p.png"
+    },
+    {
+      "index": 15,
+      "imagePrompt": "An insightful visualization of probability as a fundamental concept beyond mathematics, with symbolic depth.",
+      "image": "./images/probability/15p.png"
+    },
+    {
+      "index": 16,
+      "imagePrompt": "A powerful depiction of probability as a tool in science, AI, and daily life, interconnecting diverse fields.",
+      "image": "./images/probability/16p.png"
+    },
+    {
+      "index": 17,
+      "imagePrompt": "An encompassing image symbolizing the integration of probability in daily life, science, and AI, with a futuristic touch.",
+      "image": "./images/probability/17p.png"
+    }
+  ],
+  "filename": "probability",
+  "ttsAgent": "ttsNijivoiceAgent",
+  "voicemap": {
+    "Announcer": "afd7df65-0fdc-4d31-ae8b-a29f0f5eed62",
+    "Student": "a7619e48-bf6a-4f9f-843f-40485651257f",
+    "Teacher": "bc06c63f-fef6-43b6-92f7-67f919bd5dae"
+  }
+}
