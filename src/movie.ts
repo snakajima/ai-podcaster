@@ -4,10 +4,14 @@ import ffmpeg from "fluent-ffmpeg";
 import { createCanvas, loadImage } from "canvas";
 import { ScriptData, PodcastScript, ImageInfo } from "./type";
 
+type CanvasInfo = {
+  width: number,
+  height: number,
+};
 async function renderJapaneseTextToPNG(
   text: string,
   outputFilePath: string,
-  canvasInfo: any,
+  canvasInfo: CanvasInfo,
 ) {
   const fontSize = 48;
   const paddingX = 48 * 2;
@@ -19,18 +23,12 @@ async function renderJapaneseTextToPNG(
   let currentWidth = 0;
 
   // Iterate over each character and determine line breaks based on character width estimate
-  for (let i = 0; i < text.length; i++) {
-    const char = text[i];
+  text.split("").forEach((char) => {
     const code = char.charCodeAt(0);
     const isAnsi = code < 255;
     const isCapital = code >= 0x40 && code < 0x60;
-    const charWidth = isAnsi
-      ? isCapital
-        ? fontSize * 0.8
-        : fontSize * 0.5
-      : fontSize;
-    const isTrailing =
-      char === "。" || char === "、" || char === "？" || char === "！";
+    const charWidth = (isAnsi ? (isCapital ? 0.8 : 0.5) : 1) * fontSize;
+    const isTrailing = ["。", "、", "？", "！"].includes(char);
 
     if (char === "\n") {
       lines.push(currentLine);
@@ -47,13 +45,13 @@ async function renderJapaneseTextToPNG(
       currentLine += char;
       currentWidth += charWidth;
     }
-  }
+  });
 
   // Push the last line if there's any remaining text
   if (currentLine) {
     lines.push(currentLine);
   }
-
+  
   const textHeight = lines.length * lineHeight + paddingY * 2;
   const textTop = canvasInfo.height - textHeight;
 
@@ -103,7 +101,7 @@ const createVideo = (
   captions: CaptionInfo[],
   images: ImageInfo[],
   outputVideoPath: string,
-  canvasInfo: any,
+  canvasInfo: CanvasInfo,
 ) => {
   const start = performance.now();
   let command = ffmpeg();
