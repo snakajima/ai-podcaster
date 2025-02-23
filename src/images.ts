@@ -90,7 +90,7 @@ const image_agent = async (namedInputs: {
   }
 
   try {
-    console.log("generating", row.index, row.imagePrompt);
+    // console.log("generating", row.index, row.imagePrompt);
     const imageBuffer = await generateImage(row.imagePrompt, script);
     if (imageBuffer) {
       fs.writeFileSync(imagePath, imageBuffer);

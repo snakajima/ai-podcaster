@@ -202,7 +202,6 @@ const main = async () => {
     console.error("Error generating PNG:", err);
   });
 
-  const captions: CaptionInfo[] = [];
   const promises = jsonData.script.map((element: ScriptData, index: number) => {
     const imagePath = `./scratchpad/${name}_${index}.png`; // Output file path
     return renderJapaneseTextToPNG(
@@ -216,12 +215,13 @@ const main = async () => {
         imageIndex: element.imageIndex,
         duration: item.duration,
       };
-      captions.push(caption);
+      return caption;
     }).catch((err) => {
       console.error("Error generating PNG:", err);
+      throw err;
     });
   });
-  await Promise.all(promises);
+  const captions: CaptionInfo[] = await Promise.all(promises);
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const outputVideoPath = path.resolve("./output/" + name + "_ja.mp4");

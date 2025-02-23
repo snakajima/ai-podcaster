@@ -8,6 +8,7 @@ yarn install
 create .env file with your OpenAI key
 ```
 OPENAI_API_KEY={your OpenAI key}
+GOOGLE_PROJECT_ID={your Google Project ID}
 ```
 
 ## Create a podcast episode
