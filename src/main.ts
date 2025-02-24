@@ -16,7 +16,7 @@ import ttsNijivoiceAgent from "./agents/tts_nijivoice_agent";
 import addBGMAgent from "./agents/add_bgm_agent";
 import combineFilesAgent from "./agents/combine_files_agent";
 // import ttsOpenaiAgent from "./agents/tts_openai_agent";
-import { pathUtilsAgent } from "@graphai/vanilla_node_agents";
+import { pathUtilsAgent, fileWriteAgent } from "@graphai/vanilla_node_agents";
 
 import { ScriptData, PodcastScript } from "./type";
 
@@ -81,6 +81,14 @@ const graph_data: GraphData = {
         combinedFileName: "./output/${:script.filename}.mp3",
       },
       isResult: true,
+    },
+    fileWrite: {
+      agent: "fileWriteAgent",
+      inputs: {
+        file: "./output/${:script.filename}.json",
+        text: ":script.toJSON()",
+      },
+      params: { baseDir: __dirname + "/../" },
     },
     addBGM: {
       agent: "addBGMAgent",
@@ -200,6 +208,7 @@ const main = async () => {
     {
       ...agents,
       pathUtilsAgent,
+      fileWriteAgent,
       ttsOpenaiAgent,
       ttsNijivoiceAgent,
       addBGMAgent,

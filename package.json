@@ -14,7 +14,7 @@
     "movie": "npx tsx ./src/movie.ts",
     "test": "rm -f scratchpad/test*.* && npx tsx ./src/main.ts scripts/test.json && npx tsx ./src/images.ts scripts/test.json && npx tsx ./src/movie.ts scripts/test.json",
     "lint": "eslint src",
-    "format": "prettier --write '{src,scripts,draft,ideason,scripts_mag2,proto}/**/*.{ts,json}'"
+    "format": "prettier --write '{src,scripts,draft,ideason,scripts_mag2,proto,output}/**/*.{ts,json}'"
   },
   "repository": "git+ssh://git@github.com/snakajima/ai-podcaster.git",
   "author": "snakajima",

@@ -1,7 +1,6 @@
 import { AgentFunction, AgentFunctionInfo } from "graphai";
 import ffmpeg from "fluent-ffmpeg";
 import path from "path";
-import fs from "fs";
 import { PodcastScript } from "../type";
 
 const combineFilesAgent: AgentFunction<
@@ -43,9 +42,6 @@ const combineFilesAgent: AgentFunction<
   });
 
   await promise;
-
-  const outputScript = path.resolve("./output/" + script.filename + ".json");
-  fs.writeFileSync(outputScript, JSON.stringify(script, null, 2));
 
   return {
     fileName: outputFile,
