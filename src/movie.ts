@@ -189,44 +189,45 @@ const main = async () => {
   const dataTm = fs.readFileSync(tmScriptPath, "utf-8");
   const jsonDataTm: PodcastScript = JSON.parse(dataTm);
 
-  const canvasInfo = {
+  const canvasInfo = jsonData.aspectRatio === "9:16" ? {
+    width: 720,
+    height: 1280,
+  }: {
     width: 1280, // not 1920
     height: 720, // not 1080
   };
-  if (jsonData.aspectRatio === "9:16") {
-    canvasInfo.width = 720;
-    canvasInfo.height = 1280;
-  }
 
-  //
-  await renderJapaneseTextToPNG(
-    `${jsonData.title}\n\n${jsonData.description}`,
-    `./scratchpad/${name}_00.png`, // Output file path
-    canvasInfo,
-  ).catch((err) => {
-    console.error("Error generating PNG:", err);
-  });
-
-  const promises = jsonData.script.map((element: ScriptData, index: number) => {
-    const imagePath = `./scratchpad/${name}_${index}.png`; // Output file path
-    return renderJapaneseTextToPNG(
-      element.caption ?? element.text,
-      imagePath,
+  try {
+    await renderJapaneseTextToPNG(
+      `${jsonData.title}\n\n${jsonData.description}`,
+      `./scratchpad/${name}_00.png`, // Output file path
       canvasInfo,
-    ).then(() => {
-      const item = jsonDataTm.script[index];
+    );
+  } catch (err) {
+    console.error("Error generating PNG:", err);
+    throw err;
+  };
+
+  const promises = jsonData.script.map(async (element: ScriptData, index: number) => {
+    try {
+      const imagePath = `./scratchpad/${name}_${index}.png`; // Output file path
+      await renderJapaneseTextToPNG(
+        element.caption ?? element.text,
+        imagePath,
+        canvasInfo,
+      );
       const caption: CaptionInfo = {
         pathCaption: path.resolve(imagePath),
         imageIndex: element.imageIndex,
-        duration: item.duration,
+        duration: jsonDataTm.script[index].duration,
       };
       return caption;
-    }).catch((err) => {
+    } catch (err) {
       console.error("Error generating PNG:", err);
       throw err;
-    });
+    };
   });
-  const captions: CaptionInfo[] = await Promise.all(promises);
+  const captions = await Promise.all(promises);
 
   const audioPath = path.resolve("./output/" + name + "_bgm.mp3");
   const outputVideoPath = path.resolve("./output/" + name + "_ja.mp4");
