@@ -1,1 +1,41 @@
-{"title":"Introduction to GraphAI","speakers":["Host"],"voices":["shimmer"],"imagePath":"./images/graphai_intro/GraphAI_pararel.","script":[{"speaker":"Host","text":"This is a quick introduction of GraphAI, a Declarative Dataflow Programming environment for AI agents.","imageIndex":0,"filename":"graphai_intro0","duration":7.452},{"speaker":"Host","text":"An AI agent is a software program that can interact with its environment, collect data, and use that data to perform tasks autonomously to achieve predetermined goals.","imageIndex":1,"filename":"graphai_intro1","duration":10.908000000000001},{"speaker":"Host","text":"It utilizes various AI components and services, such as LLM and Text2Speech. It also interact with external data sources, tools and other agents via standard protocol like MCP. ","imageIndex":1,"filename":"graphai_intro2","duration":14},{"speaker":"Host","text":"All those services are accessible via asynchronous API, which makes it possible to concurrently execute those operations, but taking advantage of this concurrency is not easy.","imageIndex":1,"filename":"graphai_intro3","duration":11.964}],"filename":"graphai_intro","ttsAgent":"ttsOpenaiAgent","voicemap":{"Host":"shimmer"}}
+{
+  "title": "Introduction to GraphAI",
+  "description": "Declarative Dataflow Programming environment for AI agents.",
+  "speakers": ["Host"],
+  "voices": ["shimmer"],
+  "imagePath": "./images/graphai_intro/‎GraphAI_pararel.‎",
+  "omitCaptions": true,
+  "script": [
+    {
+      "speaker": "Host",
+      "text": "This is a quick introduction of GraphAI, a Declarative Dataflow Programming environment for AI agents.",
+      "imageIndex": 0,
+      "filename": "graphai_intro0",
+      "duration": 7.452
+    },
+    {
+      "speaker": "Host",
+      "text": "An AI agent is a software program that can interact with its environment, collect data, and use that data to perform tasks autonomously to achieve predetermined goals.",
+      "imageIndex": 1,
+      "filename": "graphai_intro1",
+      "duration": 10.908000000000001
+    },
+    {
+      "speaker": "Host",
+      "text": "It utilizes various AI components and services, such as LLM and Text2Speech. It also interact with external data sources, tools and other agents via standard protocol like MCP. ",
+      "imageIndex": 2,
+      "filename": "graphai_intro2",
+      "duration": 14
+    },
+    {
+      "speaker": "Host",
+      "text": "All those services are accessible via asynchronous API, which makes it possible to concurrently execute those operations, but taking advantage of this concurrency is not easy.",
+      "imageIndex": 3,
+      "filename": "graphai_intro3",
+      "duration": 11.964
+    }
+  ],
+  "filename": "graphai_intro",
+  "ttsAgent": "ttsOpenaiAgent",
+  "voicemap": { "Host": "shimmer" }
+}

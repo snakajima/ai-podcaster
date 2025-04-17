@@ -128,8 +128,14 @@ const createVideo = (
     // Add filter for each image
     if (omitCaptions) {
       filterComplexParts.push(
-        // BUGBUG: I am not able to remove this unnecessary zooming code
-        `[${element.imageIndex}:v]scale=${canvasInfo.width * 4}:${canvasInfo.height * 4},setsar=1,format=yuv420p,zoompan=z=zoom:x=iw/2-(iw/zoom/2):y=ih-(ih/zoom):s=${canvasInfo.width}x${canvasInfo.height}:fps=30:d=${element.duration * 30},trim=duration=${element.duration}[v${index}]`,
+        // 無限ループ → duration 秒分のフレームを生成 → 30fps に設定 → タイムスタンプ リセット → サイズ調整
+        `[${element.imageIndex}:v]loop=loop=-1:size=1:start=0,` +
+          `trim=duration=${element.duration},` +
+          `fps=30,` +
+          `setpts=PTS-STARTPTS,` +
+          `scale=${canvasInfo.width}:${canvasInfo.height},` +
+          `setsar=1,format=yuv420p` +
+          `[v${index}]`,
       );
     } else {
       filterComplexParts.push(
@@ -274,7 +280,7 @@ const main = async () => {
     images.length > 0 ? images : jsonDataTm.images,
     outputVideoPath,
     canvasInfo,
-    !!jsonData.omitCaptions
+    !!jsonData.omitCaptions,
   );
 };
 
