@@ -1,6 +1,5 @@
 import fs from "fs";
-import path from "path";
-import { PodcastScript, ScriptData } from "./type";
+import { ScriptData } from "./type";
 
 import { readPodcastScriptFile } from "./utils";
 
