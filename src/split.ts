@@ -28,6 +28,20 @@ export function splitIntoSentences(
     );
 }
 
+export const recursiveSplit = (scripts: ScriptData[]) => {
+  return scripts.reduce<ScriptData[]>((prev, element) => {
+    splitIntoSentences(element.text, "。", 7).forEach((sentence) => {
+      splitIntoSentences(sentence, "？", 7).forEach((sentence) => {
+        splitIntoSentences(sentence, "！", 7).forEach((sentence) => {
+          splitIntoSentences(sentence, "、", 7).forEach((sentence) => {
+            prev.push({ ...element, text: sentence });
+          });
+        });
+      });
+    });
+    return prev;
+  }, []);
+};
 /*
 interface Replacement {
   from: string;
@@ -69,19 +83,8 @@ const main = async () => {
     });
   }
 
-  script.script = script.script.reduce<ScriptData[]>((prev, element) => {
-    splitIntoSentences(element.text, "。", 7).forEach((sentence) => {
-      splitIntoSentences(sentence, "？", 7).forEach((sentence) => {
-        splitIntoSentences(sentence, "！", 7).forEach((sentence) => {
-          splitIntoSentences(sentence, "、", 7).forEach((sentence) => {
-            prev.push({ ...element, text: sentence });
-          });
-        });
-      });
-    });
-    return prev;
-  }, []);
-  console.log(script.script)
+  script.script = recursiveSplit(script.script);
+  console.log(script.script);
   fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
 };
 
