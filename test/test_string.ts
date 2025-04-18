@@ -26,7 +26,6 @@ test("test string", async () => {
 
 test("test string", async () => {
   const ret = recursiveSplit([scriptData]);
-  console.log(ret);
   const expect = [
     {
       speaker: "",

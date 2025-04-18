@@ -29,19 +29,24 @@ export function splitIntoSentences(
 }
 
 export const recursiveSplit = (scripts: ScriptData[]) => {
-  return scripts.reduce<ScriptData[]>((prev, element) => {
-    splitIntoSentences(element.text, "。", 7).forEach((sentence) => {
-      splitIntoSentences(sentence, "？", 7).forEach((sentence) => {
-        splitIntoSentences(sentence, "！", 7).forEach((sentence) => {
-          splitIntoSentences(sentence, "、", 7).forEach((sentence) => {
-            prev.push({ ...element, text: sentence });
-          });
-        });
-      });
+  const delimiters = ["。", "？", "！", "、"];
+  return scripts.reduce<ScriptData[]>((prev, script) => {
+    const sentences = delimiters
+      .reduce<string[]>(
+        (textData, delimiter) => {
+          return textData
+            .map((text) => splitIntoSentences(text, delimiter, 7))
+            .flat(1);
+        },
+        [script.text],
+      )
+      .flat(1);
+    return sentences.map((sentence) => {
+      return { ...script, text: sentence };
     });
-    return prev;
   }, []);
 };
+
 /*
 interface Replacement {
   from: string;
@@ -84,7 +89,6 @@ const main = async () => {
   }
 
   script.script = recursiveSplit(script.script);
-  console.log(script.script);
   fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
 };
 
