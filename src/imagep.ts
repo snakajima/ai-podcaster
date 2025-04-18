@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
-import { PodcastScript } from "./type";
 import { GraphAI, GraphData } from "graphai";
 import * as agents from "@graphai/agents";
 import * as nodeAgents from "@graphai/vanilla_node_agents";
@@ -78,8 +77,6 @@ const graph_data: GraphData = {
 
 const main = async () => {
   const fileName = process.argv[2];
-  const scriptPath = path.resolve(fileName);
-
   const graph = new GraphAI(graph_data, {
     ...agents,
     ...nodeAgents,
