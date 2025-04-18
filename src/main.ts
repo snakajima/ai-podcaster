@@ -1,7 +1,7 @@
 import "dotenv/config";
 import fsPromise from "fs/promises";
 import fs from "fs";
-import path from "path";
+// import path from "path";
 import {
   GraphAI,
   AgentFilterFunction,
@@ -18,7 +18,12 @@ import combineFilesAgent from "./agents/combine_files_agent";
 import ttsOpenaiAgent from "./agents/tts_openai_agent";
 import { pathUtilsAgent, fileWriteAgent } from "@graphai/vanilla_node_agents";
 
-import { ScriptData, PodcastScript } from "./type";
+import { ScriptData } from "./type";
+import {
+  readPodcastScriptFile,
+  getOutputFilePath,
+  getScratchpadFilePath,
+} from "./utils";
 
 const rion_takanashi_voice = "b9277ce3-ba1c-4f6f-9a65-c05ca102ded0"; // たかなし りおん
 const ben_carter_voice = "bc06c63f-fef6-43b6-92f7-67f919bd5dae"; // ベン・カーター
@@ -150,48 +155,49 @@ const agentFilters = [
 
 const main = async () => {
   const arg2 = process.argv[2];
-  const scriptPath = path.resolve(arg2);
-  const parsedPath = path.parse(scriptPath);
-  const scriptData = fs.readFileSync(scriptPath, "utf-8");
-  const script = JSON.parse(scriptData) as PodcastScript;
-  script.filename = parsedPath.name;
-  script.script.forEach((element: ScriptData, index: number) => {
-    element.filename = script.filename + index;
+  const { podcastData, fileName } = readPodcastScriptFile(arg2);
+
+  podcastData.filename = fileName;
+  podcastData.script.forEach((scriptData: ScriptData, index: number) => {
+    scriptData.filename = podcastData.filename + index;
   });
 
   // Check if any script changes
-  const outputScript = path.resolve("./output/" + script.filename + ".json");
-  if (fs.existsSync(outputScript)) {
-    const prevData = fs.readFileSync(outputScript, "utf-8");
-    const prevScript = JSON.parse(prevData) as PodcastScript;
+  const outputFilePath = getOutputFilePath(podcastData.filename + ".json");
+  const { podcastData: prevScript } =
+    readPodcastScriptFile(outputFilePath) ?? {};
+  if (prevScript) {
     console.log("found output script", prevScript.filename);
-    script.script.forEach((element: ScriptData, index: number) => {
+    podcastData.script.forEach((scriptData: ScriptData, index: number) => {
       const prevText = prevScript.script[index]?.text ?? "";
-      if (element.text !== prevText) {
-        const filePath = path.resolve(
-          "./scratchpad/" + element.filename + ".mp3",
+      if (scriptData.text !== prevText) {
+        const scratchpadFilePath = getScratchpadFilePath(
+          scriptData.filename + ".mp3",
         );
-        if (fs.existsSync(filePath)) {
-          console.log("deleting", element.filename);
-          fs.unlinkSync(filePath);
+        if (fs.existsSync(scratchpadFilePath)) {
+          console.log("deleting", scriptData.filename);
+          fs.unlinkSync(scratchpadFilePath);
         }
       }
     });
   }
 
-  if (script.tts === "nijivoice") {
+  if (podcastData.tts === "nijivoice") {
     graph_data.concurrency = 1;
-    script.voices = script.voices ?? [rion_takanashi_voice, ben_carter_voice];
-    script.ttsAgent = "ttsNijivoiceAgent";
+    podcastData.voices = podcastData.voices ?? [
+      rion_takanashi_voice,
+      ben_carter_voice,
+    ];
+    podcastData.ttsAgent = "ttsNijivoiceAgent";
   } else {
     graph_data.concurrency = 8;
-    script.voices = script.voices ?? ["shimmer", "echo"];
-    script.ttsAgent = "ttsOpenaiAgent";
+    podcastData.voices = podcastData.voices ?? ["shimmer", "echo"];
+    podcastData.ttsAgent = "ttsOpenaiAgent";
   }
-  const speakers = script.speakers ?? ["Host", "Guest"];
-  script.voicemap = speakers.reduce(
+  const speakers = podcastData.speakers ?? ["Host", "Guest"];
+  podcastData.voicemap = speakers.reduce(
     (map: any, speaker: string, index: number) => {
-      map[speaker] = script.voices![index];
+      map[speaker] = podcastData.voices![index];
       return map;
     },
     {},
@@ -217,7 +223,7 @@ const main = async () => {
     },
     { agentFilters },
   );
-  graph.injectValue("script", script);
+  graph.injectValue("script", podcastData);
   const results = await graph.run();
   console.log(results);
 };
