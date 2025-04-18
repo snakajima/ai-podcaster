@@ -1,13 +1,14 @@
 import fs from "fs";
-import path from "path";
-import { PodcastScript } from "./type";
+import { ScriptData } from "./type";
+
+import { readPodcastScriptFile } from "./utils";
 
 interface Replacement {
   from: string;
   to: string;
 }
 
-function replacePairs(str: string, replacements: Replacement[]): string {
+export function replacePairs(str: string, replacements: Replacement[]): string {
   replacements.forEach(({ from, to }) => {
     // Escape any special regex characters in the 'from' string.
     const escapedFrom = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -17,7 +18,7 @@ function replacePairs(str: string, replacements: Replacement[]): string {
   return str;
 }
 
-const replacements: Replacement[] = [
+export const replacements: Replacement[] = [
   { from: "Anthropic", to: "アンスロピック" },
   { from: "OpenAI", to: "オープンエーアイ" },
   { from: "AGI", to: "エージーアイ" },
@@ -39,21 +40,26 @@ const replacements: Replacement[] = [
 
 const main = async () => {
   const arg2 = process.argv[2];
-  const scriptPath = path.resolve(arg2);
-  const scriptData = fs.readFileSync(scriptPath, "utf-8");
-  const script = JSON.parse(scriptData) as PodcastScript;
+  const readData = readPodcastScriptFile(arg2);
+  if (!readData) {
+    console.log("no file exists");
+    return;
+  }
+  const { podcastData, podcastDataPath } = readData;
 
-  script.script = script.script.map((element) => {
-    const caption = element.caption ?? element.text;
+  podcastData.script = podcastData.script.map((script: ScriptData) => {
+    const caption = script.caption ?? script.text;
     const voice_text = replacePairs(caption, replacements);
-    if (voice_text !== element.text) {
-      element.text = voice_text;
-      element.caption = caption;
+    if (voice_text !== script.text) {
+      script.text = voice_text;
+      script.caption = caption;
     }
-    return element;
+    return script;
   });
 
-  fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
+  fs.writeFileSync(podcastDataPath, JSON.stringify(podcastData, null, 2));
 };
 
-main();
+if (process.argv[1] === __filename) {
+  main();
+}

@@ -1,4 +1,5 @@
 import { splitIntoSentences, recursiveSplit } from "../src/split";
+import { replacePairs, replacements } from "../src/fixtext";
 
 import test from "node:test";
 import assert from "node:assert";
@@ -16,7 +17,7 @@ const scriptData = {
   imageIndex: 1,
 };
 
-test("test string", async () => {
+test("test splitIntoSentences", async () => {
   const ret = splitIntoSentences(text, "。", 7);
   assert.deepStrictEqual(ret, [
     "あかさたなはまやらわ。",
@@ -24,7 +25,7 @@ test("test string", async () => {
   ]);
 });
 
-test("test string", async () => {
+test("test recursiveSplit", async () => {
   const ret = recursiveSplit([scriptData]);
   const expect = [
     {
@@ -59,4 +60,14 @@ test("test string", async () => {
     },
   ];
   assert.deepStrictEqual(ret, expect);
+});
+
+test("test replacePairs", async () => {
+  const caption = "AGIとOpenAIの危険な麺類について危険な面を話します";
+  const expect =
+    "エージーアイとオープンエーアイの危険な麺類について危険なめんを話します";
+  const voice_text = replacePairs(caption, replacements);
+
+  assert.equal(voice_text, expect);
+  // console.log(voice_text);
 });

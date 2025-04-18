@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { PodcastScript } from "./type";
 
 export const readPodcastScriptFile = (arg2: string) => {
   const scriptPath = path.resolve(arg2);
@@ -12,6 +13,7 @@ export const readPodcastScriptFile = (arg2: string) => {
 
   return {
     podcastData: script,
+    podcastDataPath: scriptPath,
     fileName: parsedPath.name,
   };
 };
