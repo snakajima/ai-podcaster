@@ -28,7 +28,7 @@
     "@graphai/agents": "^0.2.3",
     "@graphai/tts_nijivoice_agent": "^0.0.2",
     "@graphai/tts_openai_agent": "^0.0.1",
-    "@graphai/vanilla_node_agents": "^0.2.6",
+    "@graphai/vanilla_node_agents": "^1.0.1",
     "@types/fluent-ffmpeg": "^2.1.26",
     "@types/sharp": "^0.32.0",
     "canvas": "^3.1.0",

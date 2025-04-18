@@ -1,20 +1,32 @@
 import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
-import { PodcastScript } from "./type";
 import { GraphAI, GraphData } from "graphai";
 import * as agents from "@graphai/agents";
-
+import * as nodeAgents from "@graphai/vanilla_node_agents";
 dotenv.config();
 
 const graph_data: GraphData = {
   version: 0.5,
   nodes: {
-    script: {
+    file: {
+      value: "",
+    },
+    baseDir: {
       value: "",
     },
     prompt: {
       value: "",
+    },
+    script: {
+      agent: "fileReadAgent",
+      params: {
+        baseDir: ":baseDir",
+        outputType: "text",
+      },
+      inputs: {
+        file: ":file",
+      },
     },
     llm: {
       agent: "openAIAgent",
@@ -26,7 +38,7 @@ const graph_data: GraphData = {
           },
           {
             role: "user",
-            content: ":script",
+            content: ":script.data",
           },
         ],
       },
@@ -37,6 +49,16 @@ const graph_data: GraphData = {
       },
       isResult: true,
     },
+    fileWrite: {
+      agent: "fileWriteAgent",
+      inputs: {
+        file: ":file",
+        text: ":llm.text",
+      },
+      params: {
+        baseDir: ":baseDir",
+      },
+    },
     output: {
       agent: "copyAgent",
       inputs: {
@@ -46,27 +68,25 @@ const graph_data: GraphData = {
         namedKey: "text",
       },
       isResult: true,
+      console: {
+        after: true,
+      },
     },
   },
 };
 
 const main = async () => {
-  const arg2 = process.argv[2];
-  const scriptPath = path.resolve(arg2);
-  const scriptData = fs.readFileSync(scriptPath, "utf-8");
-  const script = JSON.parse(scriptData) as PodcastScript;
-
+  const fileName = process.argv[2];
   const graph = new GraphAI(graph_data, {
     ...agents,
+    ...nodeAgents,
   });
   const prompt = fs.readFileSync("./prompts/image_prompt.md", "utf-8");
   graph.injectValue("prompt", prompt);
-  graph.injectValue("script", JSON.stringify(script, null, 2));
-  const results = await graph.run();
-  if (results && typeof results.output === "string") {
-    console.log(results.output);
-    fs.writeFileSync(scriptPath, results.output);
-  }
+  graph.injectValue("file", fileName);
+  graph.injectValue("baseDir", path.resolve(__dirname + "/../"));
+
+  await graph.run();
 };
 
 main();
