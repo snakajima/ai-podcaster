@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { ScriptData, PodcastScript } from "./type";
 
-function splitIntoSentences(
+export function splitIntoSentences(
   paragraph: string,
   divider: string,
   minimum: number,
@@ -81,8 +81,10 @@ const main = async () => {
     });
     return prev;
   }, []);
-
+  console.log(script.script)
   fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
 };
 
-main();
+if (process.argv[1] === __filename) {
+  main();
+}

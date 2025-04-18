@@ -13,6 +13,7 @@
     "fixtext": "npx tsx ./src/fixtext.ts",
     "movie": "npx tsx ./src/movie.ts",
     "test": "rm -f scratchpad/test*.* && npx tsx ./src/main.ts scripts/test.json && npx tsx ./src/images.ts scripts/test.json && npx tsx ./src/movie.ts scripts/test.json",
+    "ci_test": "node --test --require ts-node/register ./test/test_*.ts",
     "lint": "eslint src",
     "format": "prettier --write '{src,scripts,draft,ideason,scripts_mag2,proto,test,graphai,output}/**/*.{ts,json}'"
   },
@@ -44,6 +45,7 @@
   "devDependencies": {
     "eslint": "^9.19.0",
     "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.22.0"
   }
