@@ -28,4 +28,5 @@ jobs:
         cache: 'npm'
     - run: yarn install
     - run: yarn run lint
+    - run: yarn run ci_test
 

@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { ScriptData, PodcastScript } from "./type";
 
-function splitIntoSentences(
+export function splitIntoSentences(
   paragraph: string,
   divider: string,
   minimum: number,
@@ -27,6 +27,25 @@ function splitIntoSentences(
         : sentence,
     );
 }
+
+export const recursiveSplit = (scripts: ScriptData[]) => {
+  const delimiters = ["。", "？", "！", "、"];
+  return scripts.reduce<ScriptData[]>((prev, script) => {
+    const sentences = delimiters
+      .reduce<string[]>(
+        (textData, delimiter) => {
+          return textData
+            .map((text) => splitIntoSentences(text, delimiter, 7))
+            .flat(1);
+        },
+        [script.text],
+      )
+      .flat(1);
+    return sentences.map((sentence) => {
+      return { ...script, text: sentence };
+    });
+  }, []);
+};
 
 /*
 interface Replacement {
@@ -69,20 +88,10 @@ const main = async () => {
     });
   }
 
-  script.script = script.script.reduce<ScriptData[]>((prev, element) => {
-    splitIntoSentences(element.text, "。", 7).forEach((sentence) => {
-      splitIntoSentences(sentence, "？", 7).forEach((sentence) => {
-        splitIntoSentences(sentence, "！", 7).forEach((sentence) => {
-          splitIntoSentences(sentence, "、", 7).forEach((sentence) => {
-            prev.push({ ...element, text: sentence });
-          });
-        });
-      });
-    });
-    return prev;
-  }, []);
-
+  script.script = recursiveSplit(script.script);
   fs.writeFileSync(scriptPath, JSON.stringify(script, null, 2));
 };
 
-main();
+if (process.argv[1] === __filename) {
+  main();
+}
