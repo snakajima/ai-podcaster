@@ -16,6 +16,11 @@
       "speaker": "Announcer",
       "text": "こんにちは。米国で活躍するエンジニアが新しい技術やビジネスを分かりやすく解説する、中島聡のLife is beautiful。今日は、アメリカで発表された「スターゲート・プロジェクト」に、ついて解説します。",
       "imagePrompt": "Blue sky, a flock of birds"
+    },
+    {
+      "speaker": "Announcer",
+      "text": "「AIがもたらす未来」第5回：民主主義と平和の未来、始まります。このシリーズは、AnthropicのCEOが2024年10月に発表した「Machines of Loving Grace」というエッセイをもとに、AIがもたらす未来について考えていきます。",
+      "imagePrompt": "Bleaching Humpack Whale"
     }
   ]
 }
