@@ -34,16 +34,15 @@ export const recursiveSplit = (scripts: ScriptData[]) => {
     const sentences = delimiters
       .reduce<string[]>(
         (textData, delimiter) => {
-          return textData
-            .map((text) => splitIntoSentences(text, delimiter, 7))
-            .flat(1);
+          return textData.map((text) => splitIntoSentences(text, delimiter, 7)).flat(1);
         },
         [script.text],
       )
       .flat(1);
-    return sentences.map((sentence) => {
-      return { ...script, text: sentence };
+    sentences.forEach((sentence) => {
+      return prev.push({ ...script, text: sentence });
     });
+    return prev;
   }, []);
 };
 
